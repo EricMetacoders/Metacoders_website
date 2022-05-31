@@ -1,0 +1,174 @@
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url('../font/HelveticaNeueLTStd-Bd.otf');
+}
+@font-face {
+  font-family:"Helvetica Neue LT Std Normal" ;
+  src: url("../font/HelveticaNeueLTStd-LtCn.otf");
+}
+:root {
+  --bs-body-bg:#F5F5F5;
+}
+.carousel-inner {
+  background-color: black !important;
+}
+.featurette-heading {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 121.5%
+}
+.featurette-heading-1 {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.94px
+}
+
+.featurette .lead {
+  font-family: 'Helvetica Neue LT Std Normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 175%;
+}
+.navbar-brand{
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 61px;
+}
+.btn-primary{
+  background: #343437;
+  border-color: white;
+}
+.navbar {
+  border: #DFDFDF 1px solid;
+}
+.navbar-toggler {
+  border:#F5F5F5 1px solid;
+}
+.navbar-toggler-icon {
+  background-image: url("../img/nav.svg")
+}
+.bg-dark {
+  background-color: #343437 !important;
+}
+.check-icon {
+  background-image: url("../img/check.png")
+}
+.check-bg {
+  background: #F5F6FA;
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px rgba(117, 115, 115, 0.1);
+}
+.check-heading {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 121.5%;
+}
+.check-content {
+  font-family: 'Helvetica Neue LT Std Normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 176%;
+}
+.one-bg {
+  background-color: #FBFCFF;
+}
+.two-bg {
+  background-color: #F5F5F5;
+}
+.connect-collapse {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343437;
+}
+
+.recruitment-heading {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #343437;
+}
+
+.recruitment-lead {
+  font-family: 'Helvetica Neue LT Std Normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 175%;
+}
+.btn-full-description {
+  color: #343437;
+  background: #E2E2E4;
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+
+.clock-icon {
+  background-image: url("../img/clock.png");
+  width:20px;
+  height: 20px;
+  display: block;
+  float: left;
+}
+
+.footer-lead {
+  font-family: 'Helvetica Neue LT Std Normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 20px;
+}
+
+.footer-copyright {
+  font-family: 'Helvetica Neue LT Std Normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 156.5%;
+  /* or 28px */
+  color: #343437;
+  opacity: 0.7;
+}
+.ul-process {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-transform: capitalize;
+margin-left: -18px;
+color: #193358;
+}
+
+.ul-process li{
+  padding-top: 10px;
+}
+.check-min {
+  min-height: 330px;
+}
+.accordion-item {border: none;}
+.accordion-button:not(.collapsed) {
+  color: #343437;
+  background-color: transparent;
+}
+.accordion {
+  --bs-accordion-bg:#FBFCFF;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow:transparent
+}
