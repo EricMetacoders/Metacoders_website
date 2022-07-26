@@ -9,6 +9,10 @@
 }
 :root {
   --bs-body-bg:#FFFFFF;
+  --bs-body-color:#011612;
+}
+.h1-green {
+  color:#3b8476
 }
 .one-bg {
   background:rgba(1, 22, 18, 0.05)
