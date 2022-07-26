@@ -84,7 +84,7 @@ p {
   object-fit: contain;
 }
 
-.section-seven h1, p {
+.section-seven h1, .section-seven p {
   margin: 0;
   text-align: center;
 }
