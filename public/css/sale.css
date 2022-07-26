@@ -1,0 +1,31 @@
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url('../font/HelveticaNeueLTStd-Bd.otf');
+}
+@font-face {
+  font-family:"Helvetica Neue LT Std Normal" ;
+  src: url("../font/HelveticaNeueLTStd-LtCn.otf");
+}
+:root {
+  --bs-body-bg:#FFFFFF;
+}
+.one-bg {
+  background:rgba(1, 22, 18, 0.05)
+}
+.two-bg {
+  background: rgba(59, 132, 118, 1)
+}
+.hd-bg {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.accordion-item {border: none;}
+.accordion-button:not(.collapsed) {
+  color: #343437;
+  background-color: transparent;
+}
+.accordion {
+  --bs-accordion-bg:#FBFCFF;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow:transparent
+}
