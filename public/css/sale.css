@@ -10,9 +10,21 @@
 :root {
   --bs-body-bg:#FFFFFF;
   --bs-body-color:#011612;
+  
 }
-.h1-green {
+.card {
+  --bs-card-border-color:none;
+}
+.title-green {
   color:#3b8476
+}
+p {
+  margin-bottom: 0 ;
+}
+#section-4 .row {
+  background-color: rgba(255, 255, 255,0.5);
+  border: 1px solid rgba(255, 255, 255,0.5);
+  border-radius: 15px;
 }
 .one-bg {
   background:rgba(1, 22, 18, 0.05)
