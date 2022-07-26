@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../font/HelveticaNeueLTStd-Bd.otf");
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Normal";
+  src: url("../font/HelveticaNeueLTStd-LtCn.otf");
+}
+:root {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #011612;
+}
+.h1-green {
+  color: #3b8476;
+}
+.one-bg {
+  background: rgba(1, 22, 18, 0.05);
+}
+.two-bg {
+  background: rgba(59, 132, 118, 1);
+}
+.hd-bg {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #343437;
+  background-color: transparent;
+}
+.accordion {
+  --bs-accordion-bg: #fbfcff;
+  --bs-accordion-btn-focus-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: transparent;
+}
+
+/* SECTION 1 */
+.section1 {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 225px;
+  height: 200px;
+  background-color: gray;
+}
+
+.footer {
+  height: 96px;
+}
+
+.footer-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
