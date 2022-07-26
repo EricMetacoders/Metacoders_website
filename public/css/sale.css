@@ -40,7 +40,7 @@
 }
 .mainheader .frameimg {
   width: 26%;
-  height: 10.2vw;
+  height: 9.2vw;
 }
 .mainheader .frameimg > img {
   width: 100%;
@@ -52,6 +52,9 @@
   display: flex;
   column-gap: 50px;
   margin-left: auto;
+}
+.framemenu .detailmenu {
+  margin-top: 15px;
 }
 .framemenu .framelogonotion {
   display: flex;
