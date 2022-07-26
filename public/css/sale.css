@@ -46,3 +46,16 @@
   height: 200px;
   background-color: gray;
 }
+
+.footer {
+  height: 96px;
+}
+
+.footer-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
