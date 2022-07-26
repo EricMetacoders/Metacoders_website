@@ -77,6 +77,13 @@ p {
   text-align: left;
 }
 
+.section-seven {
+  width: 100%;
+  height: 206px;
+  background: url("/public/assets/Rectangle-739.png");
+  object-fit: contain;
+}
+
 .footer {
   height: 96px;
 }
