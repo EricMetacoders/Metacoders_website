@@ -46,6 +46,24 @@
   height: 200px;
   background-color: gray;
 }
+/* END SECTION 1 */
+/* SECTION 2 */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2 .firstcontent {
+  width: 32%;
+}
+.section2 .maincontent {
+  width: 85%;
+  text-align: center;
+}
+.section2 .detailcontent {
+  width: 79.5%;
+  text-align: left;
+}
 
 .footer {
   height: 96px;
@@ -57,5 +75,5 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
