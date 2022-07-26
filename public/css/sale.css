@@ -33,3 +33,16 @@
   --bs-accordion-btn-focus-border-color: transparent;
   --bs-accordion-btn-focus-box-shadow:transparent
 }
+
+.footer {
+  height: 96px;
+}
+
+.footer-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
