@@ -1,14 +1,7 @@
-@font-face {
-  font-family: "Helvetica Neue LT Std";
-  src: url("../font/HelveticaNeueLTStd-Bd.otf");
-}
-@font-face {
-  font-family: "Helvetica Neue LT Std Normal";
-  src: url("../font/HelveticaNeueLTStd-LtCn.otf");
-}
 :root {
   --bs-body-bg: #ffffff;
   --bs-body-color: #011612;
+  --bs-body-font-family:'Inter', sans-serif;
 }
 .card {
   --bs-card-border-color: none;
