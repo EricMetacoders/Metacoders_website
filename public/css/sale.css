@@ -1,7 +1,7 @@
 :root {
   --bs-body-bg: #ffffff;
   --bs-body-color: #011612;
-  --bs-body-font-family:'Inter', sans-serif;
+  --bs-body-font-family: "Inter", sans-serif;
 }
 .card {
   --bs-card-border-color: none;
@@ -38,6 +38,48 @@ p {
   --bs-accordion-btn-focus-border-color: transparent;
   --bs-accordion-btn-focus-box-shadow: transparent;
 }
+/* HEADER */
+.container-fluid {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 15px red; */
+}
+.mainheader {
+  display: flex;
+  /* position: relative; */
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+.mainheader .frameimg {
+  width: 26%;
+  /* height: 5.2vw; */
+}
+.mainheader .frameimg > img {
+  width: 100%;
+  height: 100%;
+}
+.mainheader .framemenu {
+  width: 50%;
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
+.framemenu .detailmenu {
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.framemenu .framelogonotion {
+  display: flex;
+  column-gap: 5px;
+}
+.framelogonotion .logonotion {
+  margin-top: 15px;
+}
+.framelogonotion .detaillogo {
+  margin-top: 25px;
+}
+/* END HEADER */
 
 .card-height {
   min-height: 448px;
@@ -66,9 +108,14 @@ p {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  margin-top: 225px;
-  height: 200px;
-  background-color: gray;
+}
+.section1 .buttonsection1 {
+  width: 179px;
+  height: 51px;
+
+  background: #3b8476;
+  border-radius: 30px;
+  margin-top: 57px;
 }
 /* END SECTION 1 */
 /* SECTION 2 */
