@@ -84,6 +84,38 @@ p {
   object-fit: contain;
 }
 
+.section-seven h1, p {
+  margin: 0;
+  text-align: center;
+}
+
+.section-seven h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-bottom: 19px;
+}
+
+.section-seven p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px;
+  color: #15362D;
+}
+
+.section-seven .rectangle {
+  width: 173px;
+  height: 58px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
   height: 96px;
 }
