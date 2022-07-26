@@ -7,22 +7,21 @@
   src: url("../font/HelveticaNeueLTStd-LtCn.otf");
 }
 :root {
-  --bs-body-bg:#FFFFFF;
-  --bs-body-color:#011612;
-  
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #011612;
 }
 .card {
-  --bs-card-border-color:none;
+  --bs-card-border-color: none;
 }
 .title-green {
-  color:#3b8476
+  color: #3b8476;
 }
 p {
-  margin-bottom: 0 ;
+  margin-bottom: 0;
 }
 #section-4 .row {
-  background-color: rgba(255, 255, 255,0.5);
-  border: 1px solid rgba(255, 255, 255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
 }
 .one-bg {
@@ -47,17 +46,22 @@ p {
   --bs-accordion-btn-focus-box-shadow: transparent;
 }
 /* HEADER */
+.container-fluid {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 15px red; */
+}
 .mainheader {
   display: flex;
+  /* position: relative; */
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
 }
 .mainheader .frameimg {
   width: 26%;
-  height: 9.2vw;
+  /* height: 5.2vw; */
 }
 .mainheader .frameimg > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .mainheader .framemenu {
   width: 50%;
@@ -66,11 +70,21 @@ p {
   margin-left: auto;
 }
 .framemenu .detailmenu {
-  margin-top: 15px;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }
 .framemenu .framelogonotion {
   display: flex;
   column-gap: 5px;
+}
+.framelogonotion .logonotion {
+  margin-top: 15px;
+}
+.framelogonotion .detaillogo {
+  margin-top: 25px;
 }
 /* END HEADER */
 /* SECTION 1 */
@@ -80,8 +94,14 @@ p {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  height: 200px;
-  background-color: gray;
+}
+.section1 .buttonsection1 {
+  width: 179px;
+  height: 51px;
+
+  background: #3b8476;
+  border-radius: 30px;
+  margin-top: 57px;
 }
 /* END SECTION 1 */
 /* SECTION 2 */
@@ -109,7 +129,8 @@ p {
   object-fit: contain;
 }
 
-.section-seven h1, p {
+.section-seven h1,
+p {
   margin: 0;
   text-align: center;
 }
@@ -119,7 +140,7 @@ p {
   font-weight: 700;
   font-size: 42px;
   line-height: 58px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 19px;
 }
 
@@ -128,13 +149,13 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 50px;
-  color: #15362D;
+  color: #15362d;
 }
 
 .section-seven .rectangle {
   width: 173px;
   height: 58px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
   display: flex;
   align-items: center;
