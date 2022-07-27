@@ -514,7 +514,9 @@ p {
     font-size: 18px;
     line-height: 18px;
   }
-
+  .section1 .buttonsection1 {
+    margin-top: 17px;
+  }
   /* END SECTION 1 */
 
   /* SECTION 2 */
