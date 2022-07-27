@@ -168,13 +168,6 @@
   /* width: 85%; */
   margin-top: 15px;
 }
-.title-green {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 58px;
-  text-align: center;
-}
 .section2 .framedetailcontent {
   display: flex;
   column-gap: 12px;
