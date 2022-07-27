@@ -263,6 +263,60 @@
   line-height: 38px;
   font-weight: 600;
 }
+
+/* SECTION 8 */
+.section-eight {
+  margin-top: 208px;
+  margin-bottom: 478px;
+}
+
+.section-eight .title {
+  margin-bottom: 0;
+  font-style: normal;
+  color: #011612;
+}
+
+.section-eight .black-line {
+  margin-top: 38px;
+  border-bottom: 3px solid #011612;;
+}
+
+.section-eight .accordion {
+  background: #FFFFFF;
+}
+
+.section-eight .accordion-item {
+  background: #FFFFFF;
+  padding: 15px 0;
+  border-bottom: 1px solid #DBDBDB;
+  border-radius: 0;
+}
+
+.section-eight .accordion-item h3 {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 58px;
+  color: #011612;
+}
+
+.section-eight .accordion-button {
+  background: #FFFFFF;
+  padding: 0;
+  box-shadow: none;
+}
+
+.section-eight .accordion-body {
+  background: #FFFFFF;
+  padding: 0;
+}
+
+.section-eight .accordion-body p {
+  color: #666666;
+}
+
+
 /* ======== RESPONSIVE =============*/
 h1,
 h3 {
