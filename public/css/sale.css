@@ -51,6 +51,7 @@
   justify-content: right;
 }
 .framemenu .detailmenu {
+  cursor: pointer;
   margin-top: 22px;
   font-style: normal;
   font-weight: 700;
@@ -58,6 +59,7 @@
   line-height: 22px;
 }
 .framemenu .framelogonotion {
+  cursor: pointer;
   display: flex;
   column-gap: 5px;
   margin-left: 40px;
@@ -70,6 +72,26 @@
 }
 /* END HEADER */
 
+/* SECTION FIVE */
+.carousel-control-next-icon {
+  background-image: url(../assets/image/next_arr.svg);
+}
+.carousel-control-prev-icon {
+  background-image: url(../assets//image/pre_arr.svg);
+}
+.carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.section-five-margin {
+  margin-top: 9rem;
+  margin-bottom: 12rem;
+}
+.section-margin-bottom {
+  margin-bottom: 4rem;
+}
+
+/* SECTION SIX */
 .card-height {
   min-height: 448px;
   min-width: 375px;
@@ -88,6 +110,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 35px 0px;
+  border: none;
 }
 
 /* SECTION 1 */
@@ -123,20 +150,35 @@
 /* END SECTION 1 */
 /* SECTION 2 */
 .section2 {
+  margin-top: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section2 .firstcontent {
-  width: 32%;
+  /* width: 35%; */
+}
+.firstcontent > p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
 }
 .section2 .maincontent {
-  width: 85%;
+  /* width: 85%; */
+  margin-top: 15px;
+}
+.title-green {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 58px;
   text-align: center;
 }
 .section2 .detailcontent {
-  width: 79.5%;
+  width: 85.5%;
   text-align: left;
+  margin-top: 80px;
 }
 .detailcontent > p > span {
   font-weight: bolder;
@@ -178,10 +220,6 @@
   justify-content: center;
 }
 
-.card-shadow {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 35px 0px;
-  border: none;
-}
 .footer {
   height: 96px;
 }
@@ -196,13 +234,14 @@
 }
 /* SECTION 3 */
 #section-3 .card1 {
-  padding-right:20px;
+  padding-right: 20px;
 }
 #section-3 .card2 {
-  padding-right:10px;padding-left:10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 #section-3 .card3 {
-  padding-left:20px;
+  padding-left: 20px;
 }
 /* SECTION 4 */
 #section-4 .row {
@@ -215,7 +254,8 @@
   font-weight: 600;
 }
 /* ======== RESPONSIVE =============*/
-h1,h3 {
+h1,
+h3 {
   font-weight: 700;
   line-height: 58px;
 }
@@ -240,8 +280,6 @@ p {
   line-height: 24px;
   font-weight: 400;
 }
-
-
 @media (max-width: 575.98px) {  
   h1 {
     font-size: 24px;
