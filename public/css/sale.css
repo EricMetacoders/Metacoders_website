@@ -281,6 +281,9 @@
   column-gap: 12px;
   margin-top: 80px;
 }
+.framedetailcontent .detailcontentmobile {
+  display: none;
+}
 .framedetailcontent .boxbg1 {
   width: 11px;
   background: rgba(102, 102, 102, 0.2);
@@ -288,6 +291,7 @@
 .section2 .detailcontent {
   text-align: left;
 }
+
 .detailcontent > p {
   font-style: normal;
   font-weight: 400;
@@ -300,6 +304,12 @@
   font-size: 24px;
   line-height: 40px;
   color: #011612;
+}
+.detailcontent .detailcontent2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  color: #3b8476;
 }
 /* END SECTION 2 */
 .section-seven {
@@ -479,17 +489,22 @@ p {
     margin-left: 0px;
   }
   /* END DRAWER */
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+  }
   /* END MENU */
 
   /* SECTION 1 */
   .framsec1 {
-    margin-top: 70px;
+    margin-top: 45px;
   }
 
   .section1 > h1 {
     font-style: normal;
     font-weight: 700;
     text-align: center;
+    line-height: 31px;
   }
   .titlesec1 > p {
     padding-top: 10px;
@@ -501,6 +516,60 @@ p {
   }
 
   /* END SECTION 1 */
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section2 .firstcontent {
+    display: none;
+    /* width: 35%; */
+  }
+  .section2 .maincontent {
+    /* width: 85%; */
+    margin-top: 0px;
+    text-align: center;
+  }
+  .section2 .framedetailcontent {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 22px;
+  }
+  .framedetailcontent .boxbg1 {
+    display: none;
+  }
+  .section2 .detailcontent {
+    display: none;
+  }
+  .framedetailcontent .detailcontentmobile {
+    display: block;
+  }
+  .detailcontentmobile > p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+  }
+  .detailcontentmobile > p > span {
+    font-weight: 600;
+    /* font-size: 24px; */
+    /* line-height: 40px; */
+    color: #011612;
+  }
+  .detailcontentmobile .detailcontent2 {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    color: #3b8476;
+  }
+  /* END  SECTION 2 */
 
   /* SECTION 3 */
   #section-3 .col-sm-4 {
