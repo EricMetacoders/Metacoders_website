@@ -12,31 +12,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Header-->
     <header class="container-fluid hd-bg" >
       <div class="container">
-        <div class="mainheader">
-          <div class="frameimg">
-            <img src="./img/imgheader/logoheader3.svg"/>
-          </div>
-          <div class="framemenu">
-            <div class="detailmenu">서비스 안내</div>
-            <div class="detailmenu">플랜 안내</div>
-            <div class="detailmenu">FAQ</div>
-            <div class="framelogonotion">
-              <div class="logonotion">
-                <img src="./img/imgheader/logonotion.svg" alt="">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light pt-xl-4 pb-lg-4">
+            <div class="container-fluid">
+                <div class="frameimg">
+                      <img src="./img/imgheader/logoheader3.svg" />
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                </ul>
+                <div class="d-flex menuheader">
+
+                    <div class="detailmenu">서비스 안내</div>
+                    <div class="detailmenu">플랜 안내</div>
+                    <div class="detailmenu">FAQ</div>
+                    <div class="framelogonotion">
+                        <div class="logonotion">
+                                <img src="./img/imgheader/logonotion.svg" alt="">
+                        </div>
+                        <div class="detaillogo" id="mySidenav">Try Notion</div>
+                    </div>
+
+            
               </div>
-              <div class="detaillogo" >Try Notion</div>
             </div>
-          </div>
-        </div>
+          </nav>
+
     </div>
     </header>
     <!-- section 1-->
-    <div class="container p-3" style="margin-top: 224px;">   
+    <div class="container p-3 framsec1">   
       <div class="section1">
           <h1 class="title-green">0원으로 빠르게 시작하는 해외 개발자 센터</h1>
           <div class="titlesec1">
@@ -44,7 +59,7 @@
               <p>주니어부터 18년 경력의 시니어 개발자까지 한번에!</p>
           </div>
           <div class="buttonsection1">
-
+            지금 바로 팀 꾸리기
           </div>
       </div>
   </div>
@@ -261,7 +276,96 @@
       </div>
     </div>
     <!-- section 8-->
-    <div class="container p-3"><h1>SECTION 8</h1></div>
+    <div class="container p-3 section-eight">
+      <h1 class="text-center title">메타코더스에 대해 더 알고싶다면?</h1>
+      <div class="black-line"></div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h3>1.테크 커뮤니케이터의 비용도 부담하나요?</h3>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h3>2. 개발자가 우리회사 업무외에 다른 업무에도 투입될 수 있나요?</h3>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h3>3. 구독료에는 어떤 서비스가 포함되어 있나요?</h3>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h3>4. 커뮤니케이션 도구는 무엇을 사용하나요?</h3>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h3>5. 베트남 개발자의 인건비는 어느정도 인가요?</h3>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <h3>6. 테크 커뮤니케이터는 어떤 일을 하나요?</h3>
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <h3>7. Agile 방식으로 일하면 턴키 형태의 업무수행은 불가능한가요?</h3>
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>개발자 월급과 구독료 외에 추가되는 비용은 없습니다. 테크 커뮤니케이터는 메타코더스가 제공하는 서비스에 포함되어 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer-->
     <footer class="container-fluid two-bg d-flex justify-content-center align-items-center footer" >
       <div class="container">
@@ -281,5 +385,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
+    <!-- SIDE BAR  -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        console.log( document.getElementById("mySidenav"));
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
   </body>
 </html>
