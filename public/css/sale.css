@@ -149,15 +149,32 @@
   line-height: 58px;
   text-align: center;
 }
-.section2 .detailcontent {
-  width: 85.5%;
-  text-align: left;
+.section2 .framedetailcontent {
+  display: flex;
+  column-gap: 12px;
   margin-top: 80px;
 }
-.detailcontent > p > span {
-  font-weight: bolder;
+.framedetailcontent .boxbg1 {
+  width: 11px;
+  background: rgba(102, 102, 102, 0.2);
 }
-
+.section2 .detailcontent {
+  text-align: left;
+}
+.detailcontent > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #666666;
+}
+.detailcontent > p > span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #011612;
+}
+/* END SECTION 2 */
 .section-seven {
   width: 100%;
   height: 206px;
@@ -212,13 +229,14 @@
 }
 /* SECTION 3 */
 #section-3 .card1 {
-  padding-right:20px;
+  padding-right: 20px;
 }
 #section-3 .card2 {
-  padding-right:10px;padding-left:10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 #section-3 .card3 {
-  padding-left:20px;
+  padding-left: 20px;
 }
 /* SECTION 4 */
 #section-4 .row {
@@ -231,7 +249,8 @@
   font-weight: 600;
 }
 /* ======== RESPONSIVE =============*/
-h1,h3 {
+h1,
+h3 {
   font-weight: 700;
   line-height: 58px;
 }
