@@ -6,17 +6,6 @@
 .card {
   --bs-card-border-color: none;
 }
-.title-green {
-  color: #3b8476;
-}
-p {
-  margin-bottom: 0;
-}
-#section-4 .row {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-}
 .one-bg {
   background: rgba(1, 22, 18, 0.05);
 }
@@ -220,4 +209,50 @@ p {
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+}
+/* SECTION 3 */
+#section-3 .card1 {
+  padding-right:20px;
+}
+#section-3 .card2 {
+  padding-right:10px;padding-left:10px;
+}
+#section-3 .card3 {
+  padding-left:20px;
+}
+/* SECTION 4 */
+#section-4 .row {
+  background-color: rgba(255, 255, 255, 0.5);
+  /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+  border-radius: 15px;
+}
+#section-4 .row h3 {
+  line-height: 38px;
+  font-weight: 600;
+}
+/* ======== RESPONSIVE =============*/
+h1,h3 {
+  font-weight: 700;
+  line-height: 58px;
+}
+h3 {
+  line-height: 18px;
+}
+h1 {
+  font-size: 42px;
+}
+h3 {
+  font-size: 24px;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.title-green {
+  color: #3b8476;
+}
+p {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
 }
