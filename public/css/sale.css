@@ -424,6 +424,10 @@
   color: #666666;
 }
 
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
 /* ======== RESPONSIVE =============*/
 h1,
 h3 {
