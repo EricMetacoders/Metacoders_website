@@ -366,6 +366,8 @@
   background-color: rgba(255, 255, 255, 0.5);
   /*border: 1px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 #section-4 .row h3 {
   line-height: 38px;
