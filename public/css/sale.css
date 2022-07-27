@@ -2,21 +2,10 @@
   --bs-body-bg: #ffffff;
   --bs-body-color: #011612;
   --bs-body-font-family: "Inter", sans-serif;
+  --metacoders-sale-title-color: #3b8476;
 }
 .card {
   --bs-card-border-color: none;
-}
-.title-green {
-  color: #3b8476;
-  font-weight: 700;
-}
-p {
-  margin-bottom: 0;
-}
-#section-4 .row {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
 }
 .one-bg {
   background: rgba(1, 22, 18, 0.05);
@@ -179,13 +168,6 @@ p {
   /* width: 85%; */
   margin-top: 15px;
 }
-.title-green {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 58px;
-  text-align: center;
-}
 .section2 .framedetailcontent {
   display: flex;
   column-gap: 12px;
@@ -300,7 +282,7 @@ h3 {
   font-weight: 600;
 }
 .title-green {
-  color: #3b8476;
+  color: var(--metacoders-sale-title-color) ;
 }
 p {
   margin-bottom: 0;
@@ -308,3 +290,64 @@ p {
   line-height: 24px;
   font-weight: 400;
 }
+@media (max-width: 575.98px) {  
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .one-bg {
+    background: rgba(17, 60, 252, 0.05);
+  }
+  /* SECTION 3 */
+  #section-3 .card1 {
+    padding:10px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  #section-3 .card1 h3, #section-3 .card3 h3 {
+    color: var(--metacoders-sale-title-color);
+  }
+  #section-3 .card2 h3 ,#section-3 .card2 p {
+    color: var(--bs-white) ;
+  }
+  #section-3 .card2 {
+    padding:10px;
+    background: #105652;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  #section-3 .card3 {
+    padding:10px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+    /* SECTION 4 */
+  #section-4 .row {
+    background: rgba(243, 245, 255, 0.5);
+    border: 1px solid #217873;
+    border-radius: 15px;
+  }
+  #section-4 .row h3 {
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 767.98px) { }
+
+
+@media (max-width: 991.98px) { }
+
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 1399.98px) { }
