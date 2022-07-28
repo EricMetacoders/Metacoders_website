@@ -15,3 +15,10 @@ if ($(".smart-scroll").length > 0) {
     last_scroll_top = scroll_top;
   });
 }
+
+// scroll to top
+
+$("a[href='#top']").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, "smooth");
+  return false;
+});
