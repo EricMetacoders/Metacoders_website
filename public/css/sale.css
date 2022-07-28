@@ -212,6 +212,11 @@
   color: #011612;
 }
 
+#section-six .small-content-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .section-six-litte-text,
 .section-six-per {
   color: #666666;
@@ -651,6 +656,10 @@ p {
   /* SECTION SIX */
   #section-six .card-height {
     min-width: 326px;
+  }
+  #section-six .small-content-title {
+    font-size: 20px;
+    font-weight: 500;
   }
 
   /* SECTION 7 */
