@@ -347,6 +347,7 @@
 }
 .section-seven p {
   color: #15362d;
+  cursor: default;
 }
 .section-seven .rectangle {
   width: 173px;
