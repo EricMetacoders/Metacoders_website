@@ -74,7 +74,19 @@
   background-image: url(../assets/image/next_arr.svg);
 }
 .carousel-control-prev-icon {
-  background-image: url(../assets//image/pre_arr.svg);
+  background-image: url(../assets/image/pre_arr.svg);
+}
+
+.carousel-control-prev:hover > .carousel-control-prev-icon {
+  background-image: url(../assets/image/hover_prev_arr.svg);
+}
+.carousel-control-next:hover > .carousel-control-next-icon {
+  background-image: url(../assets/image/hover_next_arr.svg);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
 }
 .section-five-margin .carousel-inner {
   width: 72%;
