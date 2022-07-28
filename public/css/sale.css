@@ -673,7 +673,20 @@ p {
     height: auto;
     padding: 15px 0;
   }
-  /* END SECTION 7 */
+
+  /* SECTION 8 */
+  .section-eight {
+    margin-top: 63px;
+    margin-bottom: 101px;
+  }
+
+  .section-eight .accordion-item h3 {
+    font-size: 18px;
+  }
+
+  .section-eight .accordion-body p {
+    font-size: 14px;
+  }
 
   /* SECTION 9 */
   .footer-text {
