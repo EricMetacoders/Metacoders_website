@@ -356,14 +356,10 @@
 /* SECTION 9 */
 .footer {
   height: 96px;
+  padding: 0;
 }
 
 .footer-text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
   color: #ffffff;
 }
 /* END SECTION 9 */
@@ -393,7 +389,7 @@
 
 /* SECTION 8 */
 .section-eight {
-  margin-top: 208px;
+  margin-top: 192px;
   margin-bottom: 478px;
 }
 
@@ -663,6 +659,11 @@ p {
     padding: 15px 0;
   }
   /* END SECTION 7 */
+
+  /* SECTION 9 */
+  .footer-text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767.98px) {
