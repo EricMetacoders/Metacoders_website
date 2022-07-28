@@ -255,7 +255,7 @@ a:active {
 
 .section-six-detail-text-center {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 /* SECTION 1 */
 .framsec1 {
@@ -293,6 +293,7 @@ a:active {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* END SECTION 1 */
@@ -370,7 +371,6 @@ a:active {
 }
 .section-seven p {
   color: #15362d;
-  cursor: default;
 }
 .section-seven .rectangle {
   width: 173px;
@@ -380,6 +380,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 /* END SECTION 7 */
 /* SECTION 9 */
@@ -549,6 +550,7 @@ p {
   .section1 .buttonsection1 {
     margin-top: 17px;
   }
+
   /* END SECTION 1 */
 
   /* SECTION 2 */
