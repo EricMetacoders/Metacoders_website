@@ -641,16 +641,22 @@ p {
     width: 86%;
   }
   .section-five-custom-arrow-left {
-    left: -6%;
+    left: -4%;
   }
   .section-five-custom-arrow-right {
-    right: -6%;
+    right: -4%;
   }
+
   .section-six p {
     font-size: 20px;
     font-weight: 500;
     line-height: 58px;
     color: #292929;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 1.5rem;
   }
 
   /* SECTION SIX */
