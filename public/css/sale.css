@@ -618,6 +618,8 @@ p {
     font-weight: 600;
     font-size: 18px;
   }
+
+  /* SECTION FIVE */
   .section-five-content-text {
     font-size: 18px;
     line-height: 32px;
@@ -636,6 +638,11 @@ p {
     font-weight: 500;
     line-height: 58px;
     color: #292929;
+  }
+
+  /* SECTION SIX */
+  #section-six .card-height {
+    min-width: 326px;
   }
 
   /* SECTION 7 */
