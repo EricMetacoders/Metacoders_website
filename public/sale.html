@@ -18,7 +18,7 @@
     <!-- Header-->
     <header id="header" class="container-fluid hd-bg bg-light smart-scroll " >
       <div class="container">
-        <nav class="navbar navbar-expand-lg pt-xl-4 pb-lg-4 pt pt-4 pb-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-xl-4 pb-lg-4 pt pt-4 pb-4">
           <div class="container-fluid">
             <a href="#top">
                 <div class="frameimg">
@@ -31,16 +31,32 @@
               data-bs-toggle="collapse" 
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+              aria-expanded="true"
               style="border: none;box-shadow:none;"
             >
               <i class="fa-solid fa-bars" style="font-size: 22px;margin-top: 5px;"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-0 mb-2 mb-lg-0 menuheader">
+                <li class="nav-item">
+                  <a class="nav-link" href="#services" ><div class="detailmenu">서비스 안내</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#plan"><div class="detailmenu">플랜 안내</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq"><div class="detailmenu">FAQ</div></a>
+                </li>
+                <li class="nav-item">
+                  <div class="framelogonotion">
+                    <div class="logonotion">
+                      <img src="./img/imgheader/logonotion.svg" alt="">
+                    </div>
+                    <div class="detaillogo" id="mySidenav">Try Notion</div>
+                  </div>
+                </li>
               </ul>
-              <div class="d-flex menuheader">
+              <!-- <div class=" d-flex menuheader">
                 <a href="#services"><div class="detailmenu">서비스 안내</div></a>
                 <a href="#plan"><div class="detailmenu">플랜 안내</div></a>
                 <a href="#faq"><div class="detailmenu">FAQ</div></a>
@@ -50,8 +66,9 @@
                   </div>
                   <div class="detaillogo" id="mySidenav">Try Notion</div>
                 </div>
-              </div>
+              </div> -->
             </div>
+            
           </div>
         </nav>
       </div>
