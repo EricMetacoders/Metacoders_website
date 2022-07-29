@@ -487,7 +487,7 @@ a:active {
 
 .section-eight .accordion-body {
   background: #ffffff;
-  padding: var(--bs-accordion-body-padding-y) 0;
+ 
 }
 
 .section-eight .accordion-body p {
@@ -521,6 +521,10 @@ p {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+.list-faq {
+  list-style-type: circle;
+  color: #666666;
 }
 @media (max-width: 639.98px) {
   h1 {
@@ -741,6 +745,9 @@ p {
 
   /* SECTION 9 */
   .footer-text {
+    font-size: 14px;
+  }
+  .list-faq li {
     font-size: 14px;
   }
 }
