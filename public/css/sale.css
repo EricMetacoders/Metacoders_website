@@ -4,6 +4,9 @@
   --bs-body-font-family: "Inter", sans-serif;
   --metacoders-sale-title-color: #3b8476;
 }
+body {
+  overflow-wrap: break-word;
+}
 a,
 a:hover,
 a:active {
@@ -396,6 +399,16 @@ a:active {
 /* SECTION 3 */
 #section-3 .card1 {
   padding-right: 20px;
+}
+#section-3 .card1 p { 
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#section-3 .card2 p { 
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #section-3 .card2 {
   padding-right: 10px;
