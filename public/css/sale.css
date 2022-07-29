@@ -297,6 +297,7 @@ a:active {
   line-height: 22px;
   color: #ffffff;
   cursor: pointer;
+  text-align: center;
 }
 
 /* END SECTION 1 */
@@ -375,6 +376,7 @@ a:active {
 .section-seven p {
   color: #15362d;
   font-weight: 700;
+  line-height: 22px;
 }
 .section-seven .rectangle {
   width: 173px;
