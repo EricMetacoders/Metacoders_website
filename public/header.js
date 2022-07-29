@@ -7,6 +7,10 @@ if ($(".smart-scroll").length > 0) {
   var last_scroll_top = 0;
   $(window).on("scroll", function () {
     scroll_top = $(this).scrollTop();
+    if(scroll_top < 15) {
+      $(".smart-scroll").removeClass("scrolled-down").addClass("scrolled-up");
+      return true;
+    }
     if (scroll_top < last_scroll_top) {
       $(".smart-scroll").removeClass("scrolled-down").addClass("scrolled-up");
     } else {
@@ -22,3 +26,9 @@ $("a[href='#top']").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "smooth");
   return false;
 });
+
+if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+  $("body").addClass("css-mac");
+} else {
+  $("body").addClass("css-window");
+}

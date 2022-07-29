@@ -4,6 +4,7 @@
   --bs-body-font-family: "Inter", sans-serif;
   --metacoders-sale-title-color: #3b8476;
 }
+
 body {
   overflow-wrap: break-word;
 }
@@ -403,12 +404,22 @@ a:active {
   padding-right: 20px;
 }
 #section-3 .card1 p { 
-  max-width: 230px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.css-window #section-3 .card1 p { 
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #section-3 .card2 p { 
   max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.css-window #section-3 .card2 p { 
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -476,7 +487,7 @@ a:active {
 
 .section-eight .accordion-body {
   background: #ffffff;
-  padding: 0;
+  padding: var(--bs-accordion-body-padding-y) 0;
 }
 
 .section-eight .accordion-body p {
@@ -723,6 +734,7 @@ p {
 
   .section-eight .accordion-item h3 {
     font-size: 18px;
+    line-height: 28px;
   }
 
   .section-eight .accordion-body p {
