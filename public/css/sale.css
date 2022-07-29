@@ -64,7 +64,6 @@ a:active {
   cursor: pointer;
   display: flex;
   column-gap: 5px;
-  margin-left: 40px;
 }
 .framelogonotion .logonotion {
 }
@@ -75,6 +74,7 @@ a:active {
   column-gap: 50px;
 }
 .menuheader .detailmenu {
+  color: #011612;
   cursor: pointer;
   margin-top: 22px;
   font-style: normal;
@@ -86,13 +86,13 @@ a:active {
   cursor: pointer;
   display: flex;
   column-gap: 5px;
-  margin-left: 40px;
 }
 .framelogonotion .logonotion {
   margin-top: 10px;
 }
 .framelogonotion .detaillogo {
   margin-top: 22px;
+  color: #011612;
 }
 /* END HEADER */
 
@@ -361,9 +361,9 @@ a:active {
 /* SECTION 7 */
 .section-seven {
   width: 100%;
-  height: 206px;
+  height: auto;
   background: url("../assets/Rectangle-739.png");
-  object-fit: contain;
+  background-size: cover;
 }
 .section-seven h1 {
   margin: 0;
@@ -611,11 +611,9 @@ p {
     display: block;
   }
   .detailcontentmobile > p {
-    text-align: center;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
-    text-align: center;
     color: #666666;
   }
   .detailcontentmobile > p > span {
