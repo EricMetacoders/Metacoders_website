@@ -364,8 +364,7 @@ a:active {
   background: url("../assets/Rectangle-739.png");
   object-fit: contain;
 }
-.section-seven h1,
-.section-seven p {
+.section-seven h1 {
   margin: 0;
   text-align: center;
 }
@@ -373,20 +372,20 @@ a:active {
   color: #ffffff;
   margin-bottom: 19px;
 }
-.section-seven p {
-  color: #15362d;
-  font-weight: 700;
-  line-height: 22px;
-}
+
 .section-seven .rectangle {
   width: 173px;
   height: 58px;
   background: #ffffff;
   border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px 33px 20px 33px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #15362d;
   cursor: pointer;
+  text-align: center;
 }
 /* END SECTION 7 */
 /* SECTION 9 */
