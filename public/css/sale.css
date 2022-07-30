@@ -277,7 +277,7 @@ a:active {
 .section1 > h1 {
   font-style: normal;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 41px;
 }
 .titlesec1 > p {
   padding-top: 10px;
@@ -517,6 +517,7 @@ h3 {
 }
 .title-green {
   color: var(--metacoders-sale-title-color);
+  margin-bottom: 1.2rem;
 }
 p {
   margin-bottom: 0;
