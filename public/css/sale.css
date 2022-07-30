@@ -76,7 +76,7 @@ a:active {
 .menuheader .detailmenu {
   color: #011612;
   cursor: pointer;
-  margin-top: 22px;
+  margin-top: 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
