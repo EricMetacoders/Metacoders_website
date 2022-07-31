@@ -1,6 +1,9 @@
 // add padding top to show content behind navbar
 $("body").css("padding-top", $(".navbar").outerHeight() + "px");
 
+var timer = null;
+
+
 // detect scroll top or down
 if ($(".smart-scroll").length > 0) {
   // check if element exists
@@ -26,6 +29,27 @@ $("a[href='#top']").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "smooth");
   return false;
 });
+$("a[href='#plan']").click(function () {
+  const element = document.getElementById("plan");
+  element.scrollIntoView();
+  autoHide();
+  return false;
+});
+$("a[href='#services']").click(function () {
+  const element = document.getElementById("services");
+  element.scrollIntoView();
+  autoHide();
+  return false;
+});
+
+function autoHide() {
+    if(timer !== null) {
+        clearTimeout(timer);        
+    }
+    timer = setTimeout(function() {
+      $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
+    }, 1000);
+  };
 
 if (navigator.userAgent.indexOf('Mac OS X') != -1) {
   $("body").addClass("css-mac");
