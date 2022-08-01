@@ -29,19 +29,16 @@ $("a[href='#top']").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "smooth");
   return false;
 });
-$("a[href='#plan']").click(function () {
-  const element = document.getElementById("plan");
-  element.scrollIntoView();
-  autoHide();
+$("#navbarSupportedContent a").click(function () {
+  const url = $(this).attr('href');
+  if (url.indexOf("#") != -1) { 
+    const hash = url.substring(url.indexOf("#")+1);
+    const element = document.getElementById(hash);
+    element.scrollIntoView();
+    autoHide();
+  }
   return false;
 });
-$("a[href='#services']").click(function () {
-  const element = document.getElementById("services");
-  element.scrollIntoView();
-  autoHide();
-  return false;
-});
-
 function autoHide() {
     if(timer !== null) {
         clearTimeout(timer);        
