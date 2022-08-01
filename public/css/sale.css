@@ -4,6 +4,12 @@
   --bs-body-font-family: "Inter", sans-serif;
   --metacoders-sale-title-color: #3b8476;
 }
+
+html,
+body {
+  overflow-wrap: break-word;
+  height: 100%;
+}
 a,
 a:hover,
 a:active {
@@ -60,7 +66,6 @@ a:active {
   cursor: pointer;
   display: flex;
   column-gap: 5px;
-  margin-left: 40px;
 }
 .framelogonotion .logonotion {
 }
@@ -71,8 +76,9 @@ a:active {
   column-gap: 50px;
 }
 .menuheader .detailmenu {
+  color: #011612;
   cursor: pointer;
-  margin-top: 22px;
+  margin-top: 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -82,13 +88,13 @@ a:active {
   cursor: pointer;
   display: flex;
   column-gap: 5px;
-  margin-left: 40px;
 }
 .framelogonotion .logonotion {
   margin-top: 10px;
 }
 .framelogonotion .detaillogo {
   margin-top: 22px;
+  color: #011612;
 }
 /* END HEADER */
 
@@ -255,12 +261,12 @@ a:active {
 
 .section-six-detail-text-center {
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 /* SECTION 1 */
-
-.section1-margin-top {
-  margin-top: 224px;
+.mt-video {
+  margin-top: 10rem;
+  height: 100%;
 }
 
 .section1 {
@@ -273,7 +279,7 @@ a:active {
 .section1 > h1 {
   font-style: normal;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 41px;
 }
 .titlesec1 > p {
   padding-top: 10px;
@@ -285,37 +291,18 @@ a:active {
 }
 .section1 .buttonsection1 {
   margin-top: 57px;
-}
-
-#section1-video {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-}
-
-#section1-video video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-}
-.video-js .vjs-tech {
-  top: -2px;
-}
-
-.video-js {
-  overflow: hidden;
-}
-#section1-root {
-  width: 100vw;
-  height: 100vh;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
 }
 
 /* END SECTION 1 */
 /* SECTION 2 */
 .section2 {
-  margin-top: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,19 +352,18 @@ a:active {
 .detailcontent .detailcontent2 {
   font-weight: 600;
   font-size: 30px;
-  line-height: 42px;
+  line-height: 55px;
   color: #3b8476;
 }
 /* END SECTION 2 */
 /* SECTION 7 */
 .section-seven {
   width: 100%;
-  height: 206px;
+  height: auto;
   background: url("../assets/Rectangle-739.png");
-  object-fit: contain;
+  background-size: cover;
 }
-.section-seven h1,
-.section-seven p {
+.section-seven h1 {
   margin: 0;
   text-align: center;
 }
@@ -385,18 +371,20 @@ a:active {
   color: #ffffff;
   margin-bottom: 19px;
 }
-.section-seven p {
-  color: #15362d;
-}
+
 .section-seven .rectangle {
   width: 173px;
   height: 58px;
   background: #ffffff;
   border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px 33px 20px 33px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #15362d;
   cursor: pointer;
+  text-align: center;
 }
 /* END SECTION 7 */
 /* SECTION 9 */
@@ -412,6 +400,26 @@ a:active {
 /* SECTION 3 */
 #section-3 .card1 {
   padding-right: 20px;
+}
+#section-3 .card1 p {
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.css-window #section-3 .card1 p {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#section-3 .card2 p {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.css-window #section-3 .card2 p {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #section-3 .card2 {
   padding-right: 10px;
@@ -477,7 +485,6 @@ a:active {
 
 .section-eight .accordion-body {
   background: #ffffff;
-  padding: 0;
 }
 
 .section-eight .accordion-body p {
@@ -505,12 +512,17 @@ h3 {
 }
 .title-green {
   color: var(--metacoders-sale-title-color);
+  margin-bottom: 1.2rem;
 }
 p {
   margin-bottom: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+.list-faq {
+  list-style-type: circle;
+  color: #666666;
 }
 @media (max-width: 639.98px) {
   h1 {
@@ -545,6 +557,9 @@ p {
   /* END MENU */
 
   /* SECTION 1 */
+  .mt-video {
+    margin-top: 10rem;
+  }
 
   .section1 > h1 {
     font-style: normal;
@@ -569,7 +584,6 @@ p {
   /* SECTION 2 */
 
   .section2 {
-    margin-top: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,11 +612,9 @@ p {
     display: block;
   }
   .detailcontentmobile > p {
-    text-align: center;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
-    text-align: center;
     color: #666666;
   }
   .detailcontentmobile > p > span {
@@ -626,38 +638,39 @@ p {
   }
   #section-3 .card1 {
     padding: 10px;
-    background: #ffffff;
+    /*background: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    border-radius: 15px;*/
   }
 
   #section-3 .card h3 {
     line-height: 29px;
   }
   #section-3 .card1 h3,
+  #section-3 .card2 h3,
   #section-3 .card3 h3 {
     color: var(--metacoders-sale-title-color);
   }
   #section-3 .card2 h3,
   #section-3 .card2 p {
-    color: var(--bs-white);
+    /*color: var(--bs-white);*/
   }
   #section-3 .card2 {
     padding: 10px;
-    background: #105652;
+    /*background: #105652;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    border-radius: 15px;*/
     margin-top: 20px;
   }
   #section-3 .card3 {
     padding: 10px;
     margin-top: 20px;
-    background: #ffffff;
+    /*background: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    border-radius: 15px;*/
   }
   /* SECTION 4 */
   #section-4 .row {
@@ -721,6 +734,7 @@ p {
 
   .section-eight .accordion-item h3 {
     font-size: 18px;
+    line-height: 28px;
   }
 
   .section-eight .accordion-body p {
@@ -729,6 +743,9 @@ p {
 
   /* SECTION 9 */
   .footer-text {
+    font-size: 14px;
+  }
+  .list-faq li {
     font-size: 14px;
   }
 }

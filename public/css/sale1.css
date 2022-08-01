@@ -1,0 +1,36 @@
+
+/* SECTION 1 */
+#section1-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+#section1-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, white);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.video-js .vjs-tech {
+  top: -2px;
+}
+
+.video-js {
+  overflow: hidden;
+}
+#section1-root {
+  /*width: 100%;*/
+  height: 100%;
+}
+
+.section1 .buttonsection1 {
+  width: auto;
+  height: auto;
+  padding: unset;
+  padding-top: 5px;
+}
