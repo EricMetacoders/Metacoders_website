@@ -6,6 +6,7 @@
   position: absolute;
   z-index: -1;
   top: 0;
+  background-color: white;
 }
 
 #section1-video video {
