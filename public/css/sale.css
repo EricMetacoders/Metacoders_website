@@ -3,9 +3,22 @@
   --bs-body-color: #011612;
   --bs-body-font-family: "Inter", sans-serif;
   --metacoders-sale-title-color: #3b8476;
+  --section-content-margin-bottom: 6.2rem;
+  --section-margin-bottom: 10rem;
+  --section-padding-top: 3.5rem;
 }
 
-html,body {
+.section-y-space {
+  margin-bottom: var(--section-margin-bottom);
+  padding-top: var(--section-padding-top);
+}
+
+.section-content-margin-bottom {
+  margin-bottom: var(--section-content-margin-bottom);
+}
+
+html,
+body {
   overflow-wrap: break-word;
   height: 100%;
 }
@@ -116,17 +129,11 @@ a:active {
 .carousel-control-prev {
   opacity: 1;
 }
-.section-five-margin .carousel-inner {
+#section-five .carousel-inner {
   width: 72%;
   margin: 0 auto;
 }
-.section-five-margin {
-  margin-top: 9rem;
-  margin-bottom: 12rem;
-}
-.section-five-margin-bottom {
-  margin-bottom: 4rem;
-}
+
 .section-five-content-text {
   font-weight: 600;
   font-size: 24px;
@@ -186,11 +193,6 @@ a:active {
 .card-height {
   min-height: 448px;
   min-width: 375px;
-}
-
-.card-margin-y {
-  margin-top: 3rem;
-  margin-bottom: 12rem;
 }
 
 .card-margin {
@@ -267,12 +269,14 @@ a:active {
   margin-top: 10rem;
   height: 100%;
 }
+
 .section1 {
   width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 10rem;
 }
 .section1 > h1 {
   font-style: normal;
@@ -306,7 +310,6 @@ a:active {
 /* END SECTION 1 */
 /* SECTION 2 */
 .section2 {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +321,6 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  
 }
 .section2 .maincontent {
   /* width: 85%; */
@@ -327,7 +329,6 @@ a:active {
 .section2 .framedetailcontent {
   display: flex;
   column-gap: 12px;
-  margin-top: 80px;
 }
 .framedetailcontent .detailcontentmobile {
   display: none;
@@ -405,22 +406,22 @@ a:active {
 #section-3 .card1 {
   padding-right: 20px;
 }
-#section-3 .card1 p { 
-    max-width: 230px;
-    margin-left: auto;
-    margin-right: auto;
+#section-3 .card1 p {
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.css-window #section-3 .card1 p { 
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+.css-window #section-3 .card1 p {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#section-3 .card2 p { 
+#section-3 .card2 p {
   max-width: 290px;
   margin-left: auto;
   margin-right: auto;
 }
-.css-window #section-3 .card2 p { 
+.css-window #section-3 .card2 p {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -447,8 +448,6 @@ a:active {
 
 /* SECTION 8 */
 .section-eight {
-  margin-top: 192px;
-  margin-bottom: 478px;
 }
 
 .section-eight .title {
@@ -457,7 +456,6 @@ a:active {
 }
 
 .section-eight .black-line {
-  margin-top: 38px;
   border-bottom: 3px solid #011612;
 }
 
@@ -489,7 +487,6 @@ a:active {
 
 .section-eight .accordion-body {
   background: #ffffff;
- 
 }
 
 .section-eight .accordion-body p {
@@ -517,7 +514,6 @@ h3 {
 }
 .title-green {
   color: var(--metacoders-sale-title-color);
-  margin-bottom: 1.2rem;
 }
 p {
   margin-bottom: 0;
@@ -564,7 +560,6 @@ p {
   /* SECTION 1 */
   .mt-video {
     margin-top: 10rem;
-    
   }
 
   .section1 > h1 {
@@ -654,7 +649,8 @@ p {
   #section-3 .card h3 {
     line-height: 29px;
   }
-  #section-3 .card1 h3,#section-3 .card2 h3,
+  #section-3 .card1 h3,
+  #section-3 .card2 h3,
   #section-3 .card3 h3 {
     color: var(--metacoders-sale-title-color);
   }
@@ -695,7 +691,7 @@ p {
     font-size: 18px;
     line-height: 32px;
   }
-  .section-five-margin .carousel-inner {
+  #section-five .carousel-inner {
     width: 86%;
   }
   .section-five-custom-arrow-left {
