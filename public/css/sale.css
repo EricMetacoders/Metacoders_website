@@ -542,7 +542,7 @@ p {
     display: flex;
     column-gap: 15px;
     flex-direction: column;
-    row-gap: 15px;
+    
   }
   .menuheader .framelogonotion {
     cursor: pointer;
