@@ -140,7 +140,7 @@ a:active {
 
 .section-five-content-text {
   font-weight: 600;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .section-five-text-margin-top {
   margin-top: 33px;
@@ -148,7 +148,7 @@ a:active {
 .green-text {
   color: #3b8476;
   font-weight: 600;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .title-small-text {
   color: #666666;
@@ -680,6 +680,10 @@ p {
   }
   .section-five-custom-arrow-right {
     right: -4%;
+  }
+
+  #section-five .title-small-text {
+    font-size: 16px;
   }
 
   .section-six p {
