@@ -140,7 +140,7 @@ a:active {
 
 .section-five-content-text {
   font-weight: 600;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .section-five-text-margin-top {
   margin-top: 33px;
@@ -148,7 +148,7 @@ a:active {
 .green-text {
   color: #3b8476;
   font-weight: 600;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .title-small-text {
   color: #666666;
@@ -192,8 +192,8 @@ a:active {
 }
 
 .card-height {
-  min-height: 448px;
-  min-width: 375px;
+  min-height: 500px;
+  /* min-width: 375px; */
 }
 
 .card-margin {
@@ -209,6 +209,7 @@ a:active {
 .card-shadow {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 35px 0px;
   border: none;
+  height: 100% !important;
 }
 
 .section-six-title,
@@ -282,7 +283,6 @@ a:active {
   font-weight: 700;
 }
 .titlesec1 > p {
-  padding-top: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -294,7 +294,6 @@ a:active {
   padding: 15px 17px 15px 17px;
   background: #3b8476;
   border-radius: 30px;
-  margin-top: 57px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -341,17 +340,14 @@ a:active {
 .detailcontent > p {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
   color: #666666;
 }
 .detailcontent > p > span {
   font-weight: 600;
-  font-size: 24px;
   color: #011612;
 }
 .detailcontent .detailcontent2 {
   font-weight: 600;
-  font-size: 30px;
   color: #3b8476;
 }
 /* END SECTION 2 */
@@ -509,7 +505,7 @@ h3 {
 }
 p {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -523,6 +519,10 @@ p {
   }
   h3 {
     font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
   }
   .button-font-weight {
     font-weight: var(--button-font-weight);
@@ -561,7 +561,6 @@ p {
     text-align: center;
   }
   .titlesec1 > p {
-    padding-top: 10px;
     font-style: normal;
     text-align: center;
     font-size: 18px;
@@ -674,7 +673,7 @@ p {
 
   /* SECTION FIVE */
   .section-five-content-text {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   #section-five .carousel-inner {
     width: 86%;
@@ -684,6 +683,10 @@ p {
   }
   .section-five-custom-arrow-right {
     right: -4%;
+  }
+
+  #section-five .title-small-text {
+    font-size: 16px;
   }
 
   .section-six p {
