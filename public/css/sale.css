@@ -637,7 +637,7 @@ p {
   #section-3 .card1 h3,
   #section-3 .card2 h3,
   #section-3 .card3 h3 {
-    color: var(--metacoders-sale-title-color);
+    /* color: var(--metacoders-sale-title-color); */
   }
   #section-3 .card2 h3,
   #section-3 .card2 p {
