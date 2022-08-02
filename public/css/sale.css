@@ -566,6 +566,9 @@ p {
     text-align: center;
     font-size: 18px;
   }
+  .titlesec1 > :nth-child(2) {
+    line-height: 40px;
+  }
   .section1 .buttonsection1 {
     margin-top: 17px;
   }
@@ -661,7 +664,7 @@ p {
   }
   /* SECTION 4 */
   #section-4 .row {
-    border: 1px solid #217873;
+    /* border: 1px solid #217873; */
     border-radius: 15px;
   }
   #section-4 .row h3 {
