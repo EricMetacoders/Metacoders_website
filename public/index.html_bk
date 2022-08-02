@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet" >
+    <title>Hello, Metacoders !1</title>
+  </head>
+  <body >
+    
+      <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7862 0.139634L23.2621 7.03806C23.6884 7.31862 24.0383 7.70066 24.2804 8.14987C24.5225 8.59907 24.6492 9.10137 24.6492 9.61166V19.608C24.6492 20.5738 24.2656 21.5 23.5827 22.1829C22.8998 22.8658 21.9736 23.2494 21.0079 23.2494H3.64136C2.67561 23.2494 1.74942 22.8658 1.06653 22.1829C0.383643 21.5 1.90884e-07 20.5738 1.90884e-07 19.608V9.61166C-0.000179478 9.10118 0.126478 8.59865 0.36859 8.14924C0.610702 7.69982 0.960682 7.31761 1.38708 7.03694L11.863 0.138514C12.0002 0.0481565 12.1609 0 12.3252 0C12.4895 0 12.6501 0.0481565 12.7873 0.138514L12.7862 0.139634ZM22.9686 10.3041L12.7705 16.6793C12.6369 16.763 12.4823 16.8073 12.3246 16.8073C12.1669 16.8073 12.0124 16.763 11.8787 16.6793L1.68063 10.3052V19.608C1.68063 20.6904 2.55904 21.5688 3.64136 21.5688H21.0079C21.5279 21.5688 22.0266 21.3622 22.3943 20.9945C22.762 20.6268 22.9686 20.1281 22.9686 19.608V10.3041ZM12.3246 1.84715L2.31143 8.44194C2.24199 8.48719 2.17675 8.53856 2.11647 8.59544L12.3246 14.9751L22.5316 8.59544C22.4721 8.53866 22.4076 8.48729 22.3389 8.44194L12.3246 1.84715Z" fill="white"/>
+                </svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-3 text-white">hello@Metacoders</a></li>
+              <!--<li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>-->
+            </ul>
+    
+            <!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>-->
+          </div>
+        </div>
+      </header>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Metacoders</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Metacoders</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mail</a></li>
+                    <li><a class="dropdown-item" href="#">Phone</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Address</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="one-bg p-3" >
+      <div class="container">
+        <div class="row featurette p-3 ">
+          <div class="col-md-7 pt-5">
+            <h2 class="featurette-heading fw-normal lh-1">Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.</h2>
+            <p class="lead">We work as a remote programming team for Korean rocket start-ups. Join as a long-term team member rather than outsourcing.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">See Running Projects</a></p>
+          </div>
+          <div class="col-md-5">
+            <img src="img/top.png" class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+      <div id="myCarousel" class="carousel carousel-dark slide p-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <!--<h1>Another example headline.</h1>>-->
+                <div class="row">
+                  <div class="col-md-4"><img src="img/forbes.png"/></div>
+                  <div class="col-md-4"><img src="img/business_insider.png"/></div>
+                  <div class="col-md-4"><img src="img/protocol.png"/></div>
+                </div>
+                <!--<p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/></svg>
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Other.</h1>
+                <p>...</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse others</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 ">
+          <div class="col-lg-12 check-bg p-5 check-min">
+          <svg width="41" height="43" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="41" height="43" fill="#57586E"/>
+            <path d="M13 21.5L17.6667 26L27 17" stroke="white" stroke-width="3"/>
+            </svg>
+          <p></p>
+          <h2 class="fw-normal check-heading">Metacoders</h2>
+          <p  class="fw-normal check-content">joins the programming team of the rocket startup to complete the product.</p>
+          
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 ">
+          <div class="col-lg-12 check-bg p-5 check-min">
+          <svg width="41" height="43" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="41" height="43" fill="#57586E"/>
+            <path d="M13 21.5L17.6667 26L27 17" stroke="white" stroke-width="3"/>
+            </svg>
+          <p></p>
+          <h2 class="fw-normal check-heading">Metacoders</h2>
+          <p  class="fw-normal check-content">connects with rocket startups that have attracted more than 10 million $</p>
+          
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 ">
+          <div class="col-lg-12 check-bg p-5 check-min">
+          <svg width="41" height="43" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="41" height="43" fill="#57586E"/>
+            <path d="M13 21.5L17.6667 26L27 17" stroke="white" stroke-width="3"/>
+            </svg>
+          <p></p>
+          <h2 class="fw-normal check-heading">Metacoders</h2>
+          <p  class="fw-normal check-content">addresses language limitations and cultural differences among team members and supports remote collaboration.</p>
+          
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+        <div class="p-3"> </div>
+        <div class="row">
+          <div class="col-lg-4 ">
+            <div class="col-lg-12 check-bg p-5 check-min">
+            <svg width="41" height="43" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="41" height="43" fill="#57586E"/>
+              <path d="M13 21.5L17.6667 26L27 17" stroke="white" stroke-width="3"/>
+              </svg>
+            <p></p>
+            <h2 class="fw-normal check-heading">Metacoders</h2>
+            <p  class="fw-normal check-content">seeks to address the imbalance of regional job opportunities in the area of programming.</p>
+            
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 ">
+            <div class="col-lg-12 check-bg p-5">
+            <svg width="41" height="43" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="41" height="43" fill="#57586E"/>
+              <path d="M13 21.5L17.6667 26L27 17" stroke="white" stroke-width="3"/>
+              </svg>
+            <p></p>
+            <h2 class="fw-normal check-heading">Metacoders</h2>
+            <p  class="fw-normal check-content">provides the developer's growth environment and the best salary through collaboration with S-class team members.</p>
+            
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 "></div>
+        </div>
+  </div>
+
+  <div class="container p-3"></div>
+  <div class="one-bg">
+    <div class="container p-3"></div>
+    <div class="container p-3">
+      <div class="row featurette p-3">
+        <div class="col-md-6">
+          <img src="img/connect.png" class="img-fluid"/>
+        </div>
+        <div class="col-md-6 pt-5">
+          <!--<h2 class="featurette-heading-1 fw-normal lh-1">Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.</h2>
+          <p class="lead">We work as a remote programming team for Korean rocket start-ups. Join as a long-term team member rather than outsourcing.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>-->
+          <!--aa-->
+
+
+          <div class="accordion one-bg" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button connect-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong style="color: rgba(0, 0, 0, 0.7);"> Manage products long-term as a team member, not just a one-time outsourcing project.</strong>
+                      <p></p>
+                      <p>Development that only implements functions without understanding the product is just normal coders do. Of course, the development of functions must be accomplished. <p>
+                    </li>
+                    <li><strong style="color: rgba(0, 0, 0, 0.7);"> If there are various projects, I can work on the projects I want.</strong>
+                      <p></p>
+                      <p>Metacoders will be a window to connect with rocket startups, regardless of region or language. As Metacoders grows and creates more success, options can vary.<p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed connect-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  You can work with the best team members.
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed connect-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Provides a fast growth environment.
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--aa-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container p-3"></div>
+  <div class="one-bg">
+    
+    <div class="container p-3">
+      <div class="row featurette p-3">
+        <div class="col-md-6 p-3">
+          <h2 class="featurette-heading fw-normal lh-1 pt-5">We are recruiting people to work with Metacoders</h2>
+          <p></p>
+          <p class="lead">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="black"/>
+              <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
+              </svg> 
+            <span style="margin-left: 20px;"> 
+              Who wants to help spread the capabilities of Vietnamese developers to the world.
+            </span>
+            </p>
+            <p class="lead">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="black"/>
+              <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
+              </svg> 
+              <span style="margin-left: 20px;"> 
+                Who wants to grow together by participating in a world-changing project.
+              </span>
+            
+            </p>
+            <p class="lead">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="black"/>
+                <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
+                </svg> 
+                <span style="margin-left: 20px;"> 
+                  People who enjoy logical thinking and problem solving
+                </span>
+              </p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#">See Running Projects</a></p>-->
+        </div>
+        <div class="col-md-6">
+          <img src="img/running.png" class="img-fluid"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-3"></div>
+  <div class="container p-3"></div>
+
+  <div class="container p-3">
+    <div class="row featurette p-3">
+      <div class="col-md-12 pt-5 text-center">
+        <h2 class="featurette-heading-1 fw-normal lh-1">Currently in process</h2>
+        <p class="lead">Metacoders has done this so far.</p>
+      </div>
+    </div>
+    <div class="row featurette p-3">
+      <div class="col-md-3 pt-5 p-5">
+        <h2 class="featurette-heading-1 fw-normal lh-1">We have signed a business agreement with VNU and confirmed ITP (Information Technology Park) as a base.</h2>
+        <p class="lead">
+          <ul class="ul-process">
+            <li>We conduct a one-year course for VNU CS undergraduate graduates.</li>
+            <li>Within three years, a metacodus community of 1,000 developers will be born.</li>
+            
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-3 pt-5 p-5">
+        <h2 class="featurette-heading-1 fw-normal lh-1">We decided to provide technical support to Green Labs (agTech) as the first client.</h2>
+        <p class="lead">
+          <ul class="ul-process">
+            <li>홈페이지</li>
+            <li>Green Labs revolutionizes human eating in a sustainable way.</li>
+            <li>Annual sales of 100 billion won (2021) 500 billion won (2022)</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-3 pt-5 p-5">
+        <h2 class="featurette-heading-1 fw-normal lh-1">We are contacting a fast-growing startup that will become an additional client.</h2>
+        <p class="lead">
+          <ul class="ul-process">
+            <!--<li></li>-->
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-3 pt-5 p-5">
+        <h2 class="featurette-heading-1 fw-normal lh-1">Green Labs, SNU, D-Camp, Hanmi Engineering & Construction, #HASHED, etc. signed a partnership</h2>
+        <p class="lead">
+          <ul class="ul-process">
+            <!--<li></li>-->
+            
+          </ul>
+        </p>
+      </div>
+    </div>
+   </div>
+    <div class="container p-3"></div>
+    <div class="container p-3">
+      <div class="row featurette p-3">
+        <div class="col-md-6">
+          <h2 class="featurette-heading-1 fw-normal lh-1">A position under recruitment</h2>
+          <p class="lead">Become a member of the Metacoders team.</p>
+          
+        </div>
+        <div class="col-md-6 text-end">
+          <a class="btn btn-lg btn-primary" href="#">View all Positions</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container p-3 one-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Junior Project Manager(한국어 필수)</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-2" ></div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Admin Staff</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-2" ></div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">HR</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-2" ></div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Project Manager as Scrum Master</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-2" ></div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Finance & Accounting Manager</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-2" ></div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Front-end Developer</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+    <div class="container p-3 check-bg">
+      <div class="row p-3">
+      <div class="col-md-8 p-3">
+        <h2 class="recruitment-heading">Back-end Developer</h2>
+        <p class="recruitment-lead">
+          <span class="clock-icon"></span>          
+          <span style="margin-left: 10px;">Fulltime</span></p>
+          <hr style="border: 2px solid #E8E8E8;"/>
+          <a class="btn btn-lg btn-primary btn-full-description" href="#">Full Description</a>
+      </div>
+      <div class="col-md-4 text-center inline"><a  style="margin-top: 80px;" class="btn btn-lg btn-primary" href="#">Apply now</a></div>
+    </div>
+    </div>
+
+    <!-- Social Footer-->
+    <div class="container p-3" >
+      <hr style="border: 2px solid #E8E8E8;"/>
+      <row class="text-center">
+        <div class="col-md-12 text-center">
+      <a class="navbar-brand p-3 text-center" href="#">Metacoders</a></div>
+      <div class="col-md-12 text-center footer-lead p-3">Duplicate Search Login</div>
+      <div class="col-md-12 text-center p-2">
+        <img src="img/facebook.png" class="p-2" alt="Facebook"/>
+        <img src="img/linkedin.png" class="p-2" alt="LinkedIn"/>
+        <img src="img/instagram.png" class="p-2" alt="Instagram"/>
+        <img src="img/twitter.png" class="p-2" alt="Twitter"/>
+    </row>
+    </div>
+
+    <!-- Copyright Footer-->
+    <div class="container p-3" >
+      <hr style="border: 2px solid #E8E8E8;"/>
+      <row class="text-center">
+        <div class="col-md-12 text-center footer-copyright">
+        @Copyright Metacoders. All rights reserved</div>
+        
+    </row>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

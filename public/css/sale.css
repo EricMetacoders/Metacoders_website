@@ -282,12 +282,7 @@ a:active {
   font-style: normal;
   font-weight: 700;
 }
-.titlesec1 > p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  text-align: center;
-}
+
 .section1 .buttonsection1 {
   width: 191px;
   height: 51px;
@@ -465,6 +460,7 @@ a:active {
   font-weight: 700;
   font-size: 24px;
   color: #011612;
+  line-height: 30px;
 }
 
 .section-eight .accordion-button {
@@ -560,10 +556,10 @@ p {
     font-weight: 700;
     text-align: center;
   }
-  .titlesec1 > p {
-    font-style: normal;
-    text-align: center;
-    font-size: 18px;
+
+  .titlesec1 > h3 {
+    line-height: 25px;
+    margin-bottom: 0px;
   }
   .section1 .buttonsection1 {
     margin-top: 17px;
@@ -660,7 +656,7 @@ p {
   }
   /* SECTION 4 */
   #section-4 .row {
-    border: 1px solid #217873;
+    /* border: 1px solid #217873; */
     border-radius: 15px;
   }
   #section-4 .row h3 {
