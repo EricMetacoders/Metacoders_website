@@ -321,7 +321,7 @@ a:active {
 }
 .section2 .maincontent {
   /* width: 85%; */
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .section2 .framedetailcontent {
   display: flex;
@@ -368,7 +368,7 @@ a:active {
 }
 .section-seven h1 {
   color: #ffffff;
-  margin-bottom: 19px;
+  /* margin-bottom: 19px; */
 }
 
 .section-seven .rectangle {
@@ -591,7 +591,7 @@ p {
 
   .section2 .maincontent {
     /* width: 85%; */
-    margin-top: 0px;
+    /* margin-top: 0px; */
     text-align: center;
   }
   .section2 .framedetailcontent {
