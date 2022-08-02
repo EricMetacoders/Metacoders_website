@@ -6,6 +6,10 @@
   --section-content-margin-bottom: 6.2rem;
   --section-margin-bottom: 10rem;
   --section-padding-top: 3.5rem;
+  --desktop-title-line-height: 58px;
+  --mobile-title-line-height: 36px;
+  --desktop-content-line-height: 28px;
+  --mobile-content-line-height: 26px;
 }
 
 .section-y-space {
@@ -94,7 +98,6 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
 }
 .menuheader .framelogonotion {
   cursor: pointer;
@@ -137,7 +140,6 @@ a:active {
 .section-five-content-text {
   font-weight: 600;
   font-size: 24px;
-  line-height: 42px;
 }
 .section-five-text-margin-top {
   margin-top: 33px;
@@ -146,13 +148,11 @@ a:active {
   color: #3b8476;
   font-weight: 600;
   font-size: 24px;
-  line-height: 42px;
 }
 .title-small-text {
   color: #666666;
   font-size: 20px;
   font-weight: 500;
-  line-height: 42px;
 }
 .section-five-custom-arrow {
   position: absolute;
@@ -187,7 +187,7 @@ a:active {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 46%;
+  top: 40%;
 }
 
 .card-height {
@@ -213,7 +213,6 @@ a:active {
 .section-six-title,
 .section-six-money-number {
   font-weight: 700;
-  line-height: 58px;
 }
 
 .section-six-title,
@@ -224,7 +223,6 @@ a:active {
 .section-six p {
   font-size: 24px;
   font-weight: 500;
-  line-height: 58px;
   color: #292929;
 }
 
@@ -281,14 +279,12 @@ a:active {
 .section1 > h1 {
   font-style: normal;
   font-weight: 700;
-  line-height: 41px;
 }
 .titlesec1 > p {
   padding-top: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  /* line-height: 18px; */
   text-align: center;
 }
 .section1 .buttonsection1 {
@@ -345,19 +341,16 @@ a:active {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 40px;
   color: #666666;
 }
 .detailcontent > p > span {
   font-weight: 600;
   font-size: 24px;
-  line-height: 40px;
   color: #011612;
 }
 .detailcontent .detailcontent2 {
   font-weight: 600;
   font-size: 30px;
-  line-height: 55px;
   color: #3b8476;
 }
 /* END SECTION 2 */
@@ -442,7 +435,6 @@ a:active {
   margin-right: 0px;
 }
 #section-4 .row h3 {
-  line-height: 38px;
   font-weight: 600;
 }
 
@@ -475,7 +467,6 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 58px;
   color: #011612;
 }
 
@@ -518,9 +509,9 @@ h3 {
 p {
   margin-bottom: 0;
   font-size: 18px;
-  line-height: 24px;
   font-weight: 400;
 }
+
 .list-faq {
   list-style-type: circle;
   color: #666666;
@@ -528,14 +519,11 @@ p {
 @media (max-width: 639.98px) {
   h1 {
     font-size: 24px;
-    line-height: 36px;
   }
   h3 {
     font-size: 20px;
   }
-  .one-bg {
-    background: rgba(17, 60, 252, 0.05);
-  }
+
   /* MENU */
   .frameimg > img {
     width: 125px;
@@ -568,7 +556,6 @@ p {
     font-style: normal;
     font-weight: 700;
     text-align: center;
-    line-height: 31px;
   }
   .titlesec1 > p {
     padding-top: 10px;
@@ -576,7 +563,6 @@ p {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
-    /*line-height: 18px;*/
   }
   .section1 .buttonsection1 {
     margin-top: 17px;
@@ -618,20 +604,16 @@ p {
   .detailcontentmobile > p {
     font-weight: 400;
     font-size: 17px;
-    line-height: 24px;
     color: #666666;
   }
   .detailcontentmobile > p > span {
     font-weight: 600;
-    /* font-size: 24px; */
-    /* line-height: 40px; */
     color: #011612;
   }
   .detailcontentmobile .detailcontent2 {
     padding-top: 25px;
     font-weight: 600;
     font-size: 22px;
-    line-height: 24px;
     color: #3b8476;
   }
   /* END  SECTION 2 */
@@ -649,7 +631,6 @@ p {
   }
 
   #section-3 .card h3 {
-    line-height: 29px;
   }
   #section-3 .card1 h3,
   #section-3 .card2 h3,
@@ -683,7 +664,6 @@ p {
     border-radius: 15px;
   }
   #section-4 .row h3 {
-    line-height: 24px;
     font-weight: 600;
     font-size: 18px;
   }
@@ -691,7 +671,6 @@ p {
   /* SECTION FIVE */
   .section-five-content-text {
     font-size: 18px;
-    line-height: 32px;
   }
   #section-five .carousel-inner {
     width: 86%;
@@ -706,7 +685,6 @@ p {
   .section-six p {
     font-size: 20px;
     font-weight: 500;
-    line-height: 58px;
     color: #292929;
   }
 
@@ -738,7 +716,6 @@ p {
 
   .section-eight .accordion-item h3 {
     font-size: 18px;
-    line-height: 28px;
   }
 
   .section-eight .accordion-body p {
