@@ -39,6 +39,7 @@ $("#navbarSupportedContent a").click(function () {
   }
   return false;
 });
+
 function autoHide() {
     if(timer !== null) {
         clearTimeout(timer);        
