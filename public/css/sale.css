@@ -59,6 +59,12 @@ a:active {
 }
 /* HEADER */
 
+.nav-line {
+  height: 0.5px;
+  width: 100%;
+  background-color: #edeced;
+}
+
 .frameimg > img {
   width: 233px;
 }
@@ -99,6 +105,7 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  text-align: right;
 }
 .menuheader .framelogonotion {
   cursor: pointer;
