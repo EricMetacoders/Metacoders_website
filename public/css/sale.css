@@ -284,7 +284,7 @@ a:active {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 10%;
 }
 .section1 > h1 {
   font-style: normal;
