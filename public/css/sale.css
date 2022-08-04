@@ -750,3 +750,28 @@ p {
 
 @media (max-width: 1399.98px) {
 }
+
+/*  LANDSCAPE */
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  h1 {
+    font-size: 28px;
+  }
+  h3,
+  p {
+    font-size: 14px;
+  }
+  .section1 {
+    padding-top: 0;
+  }
+  .section1 .buttonsection1 > button {
+    font-size: 10px !important;
+    padding: 0 9px !important;
+  }
+  .section-content-margin-bottom {
+    margin-bottom: 5%;
+  }
+  .section-y-space {
+    padding-top: 5%;
+  }
+}
