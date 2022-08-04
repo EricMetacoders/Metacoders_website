@@ -119,12 +119,7 @@ a:active {
   margin-top: 22px;
   color: #011612;
 }
-.nav-item > br {
-  display: none;
-}
-.nav-item .nav-line {
-  display: none;
-}
+
 /* END HEADER */
 
 /* SECTION FIVE */
