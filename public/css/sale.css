@@ -755,7 +755,6 @@ p {
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
   h1 {
-    color: red !important;
     font-size: 28px;
   }
   h3,
