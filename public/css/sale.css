@@ -314,8 +314,10 @@ a:active {
   align-items: center;
 }
 .section2 .firstcontent {
+  text-align: center;
   /* width: 35%; */
 }
+
 .firstcontent > p {
   font-style: normal;
   font-weight: 700;
