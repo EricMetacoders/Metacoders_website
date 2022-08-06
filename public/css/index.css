@@ -13,6 +13,9 @@
 .carousel-inner {
   background-color: black !important;
 }
+.frameimg > img {
+  width: 233px;
+}
 .featurette-heading {
   font-family: 'Helvetica Neue LT Std';
   font-style: normal;
