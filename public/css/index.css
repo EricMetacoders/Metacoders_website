@@ -1,15 +1,24 @@
-
 @font-face {
   font-family: "Helvetica Neue LT Std";
-  src: url('../font/HelveticaNeueLTStd-Bd.otf');
+  src: url("../font/HelveticaNeueLTStd-Bd.otf");
 }
 @font-face {
-  font-family:"Helvetica Neue LT Std Normal" ;
+  font-family: "Helvetica Neue LT Std Normal";
   src: url("../font/HelveticaNeueLTStd-LtCn.otf");
 }
 :root {
-  --bs-body-bg:#F5F5F5;
+  --primary-bg-color: #f8f9fa;
 }
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+}
+
+aside {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .carousel-inner {
   background-color: black !important;
 }
@@ -17,80 +26,81 @@
   width: 233px;
 }
 .featurette-heading {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 121.5%
+  line-height: 121.5%;
 }
 .featurette-heading-1 {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24.94px
+  line-height: 24.94px;
 }
 
 .featurette .lead {
-  font-family: 'Helvetica Neue LT Std Normal';
+  font-family: "Helvetica Neue LT Std Normal";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 175%;
 }
-.navbar-brand{
-  font-family: 'Helvetica Neue LT Std';
+.navbar-brand {
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 61px;
 }
-.btn-primary{
+.btn-primary {
   background: #343437;
   border-color: white;
 }
 .navbar {
-  border: #DFDFDF 1px solid;
+  background-color: white;
 }
 .navbar-toggler {
-  border:#F5F5F5 1px solid;
+  border: #f5f5f5 2px solid;
+  border-radius: 12px;
 }
 .navbar-toggler-icon {
-  background-image: url("../img/nav.svg")
+  background-image: url("../img/nav.svg");
 }
 .bg-dark {
   background-color: #343437 !important;
 }
 .check-icon {
-  background-image: url("../img/check.png")
+  background-image: url("../img/check.png");
 }
 .check-bg {
-  background: #F5F6FA;
+  background: #f5f6fa;
   border-radius: 6px;
   box-shadow: 0px 4px 50px rgba(117, 115, 115, 0.1);
 }
 .check-heading {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 121.5%;
 }
 .check-content {
-  font-family: 'Helvetica Neue LT Std Normal';
+  font-family: "Helvetica Neue LT Std Normal";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 176%;
 }
 .one-bg {
-  background-color: #FBFCFF;
+  background-color: var(--primary-bg-color);
 }
 .two-bg {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 .connect-collapse {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -98,7 +108,7 @@
 }
 
 .recruitment-heading {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -107,7 +117,7 @@
 }
 
 .recruitment-lead {
-  font-family: 'Helvetica Neue LT Std Normal';
+  font-family: "Helvetica Neue LT Std Normal";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -115,21 +125,21 @@
 }
 .btn-full-description {
   color: #343437;
-  background: #E2E2E4;
+  background: #e2e2e4;
   border: 1px solid #000000;
   border-radius: 6px;
 }
 
 .clock-icon {
   background-image: url("../img/clock.png");
-  width:20px;
+  width: 20px;
   height: 20px;
   display: block;
   float: left;
 }
 
 .footer-lead {
-  font-family: 'Helvetica Neue LT Std Normal';
+  font-family: "Helvetica Neue LT Std Normal";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -138,7 +148,7 @@
 }
 
 .footer-copyright {
-  font-family: 'Helvetica Neue LT Std Normal';
+  font-family: "Helvetica Neue LT Std Normal";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -148,30 +158,46 @@
   opacity: 0.7;
 }
 .ul-process {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 170%;
-/* or 24px */
-text-transform: capitalize;
-margin-left: -18px;
-color: #193358;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  /* or 24px */
+  text-transform: capitalize;
+  margin-left: -18px;
+  color: #193358;
 }
 
-.ul-process li{
+.ul-process li {
   padding-top: 10px;
 }
 .check-min {
   min-height: 330px;
 }
-.accordion-item {border: none;}
+.accordion-item {
+  border: none;
+}
 .accordion-button:not(.collapsed) {
   color: #343437;
   background-color: transparent;
 }
 .accordion {
-  --bs-accordion-bg:#FBFCFF;
+  --bs-accordion-bg: #fbfcff;
   --bs-accordion-btn-focus-border-color: transparent;
-  --bs-accordion-btn-focus-box-shadow:transparent
+  --bs-accordion-btn-focus-box-shadow: transparent;
+}
+
+/* section five */
+
+.card {
+  background: transparent !important;
+  width: 100% !important;
+}
+
+.section-five-image > img {
+  max-width: 25rem;
+  width: 25rem;
+  height: 37rem;
+  object-fit: cover;
 }
