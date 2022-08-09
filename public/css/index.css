@@ -58,6 +58,24 @@ aside {
   background: #343437;
   border-color: white;
 }
+.btn-apply {
+  border-color: #2937f0;
+  color: #2937f0;
+  font-weight: 400;
+  transition: all;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-apply:hover {
+  border-color: #2937f0;
+  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  color: white;
+  transition: all;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+}
+
 .navbar {
   background-color: white;
 }
@@ -113,7 +131,7 @@ aside {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
-  color: #343437;
+  color: #2937f0;
 }
 
 .recruitment-lead {
