@@ -81,21 +81,22 @@ aside {
   border-color: white;
 }
 .btn-apply {
-  border-color: #2937f0;
-  color: #2937f0;
-  font-weight: 400;
+  /* rgba(59, 132, 118, 1)  */
+  border-color: rgba(0, 87, 74, 1);
+  color: rgba(0, 87, 74, 1);
+  font-weight: 500;
   transition: all;
   transition-duration: 550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-apply:hover {
   border-color: #2937f0;
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background: var(--gradient-color);
   color: white;
   transition: all;
   transition-duration: 550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .navbar {
@@ -153,7 +154,7 @@ aside {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
-  color: #2937f0;
+  color: black;
 }
 
 .recruitment-lead {
