@@ -470,9 +470,21 @@ aside {
 }
 
 .title-box-content {
-  width: 40%;
-  margin: 0 auto;
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-box-content-details {
+  margin-left: 10px;
+}
+
+.title-box-content-line-parent {
+  height: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 .title-box-content-line {
