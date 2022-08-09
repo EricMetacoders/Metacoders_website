@@ -474,17 +474,17 @@ aside {
   }
 }
 
-#section-six .title-box {
+.title-box {
   margin: 0 auto;
   height: 100%;
   position: relative;
 }
 
-#section-six .title-box h2 {
+.title-box h2 {
   font-size: 36px;
 }
 
-#section-six .title-box p {
+.title-box p {
   font-size: 21px;
 }
 
