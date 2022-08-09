@@ -474,6 +474,7 @@ aside {
   }
 }
 
+/* section six */
 .title-box {
   margin: 0 auto;
   height: 100%;
@@ -510,4 +511,8 @@ aside {
   width: 20px;
   background: var(--gradient-color);
   height: 100%;
+}
+
+.timeline__event__date p {
+  color: white;
 }
