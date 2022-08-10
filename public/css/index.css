@@ -516,3 +516,10 @@ aside {
 .timeline__event__date p {
   color: white;
 }
+
+/* section eight */
+.card-carousel {
+  background-color: white;
+  height: 500px;
+  border-radius: 15px;
+}
