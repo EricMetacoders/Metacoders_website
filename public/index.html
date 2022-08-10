@@ -86,138 +86,91 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- owl carousel scs -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css -->
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/card.css">
 
     <!-- title -->
     <title>Hello, Metacoders !</title>
   </head>
-  <body>
-    <!-- header -->
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <div class="frameimg">
-            <img src="./img/imgheader/logoheader_new.svg" />
-          </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <i class="fa-solid fa-bars fa-lg" style="color: white"></i>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Metacoders
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="offcanvasNavbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="offcanvasNavbarDropdown"
-                >
-                  <li><a class="dropdown-item" href="#">Mail</a></li>
-                  <li><a class="dropdown-item" href="#">Phone</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li><a class="dropdown-item" href="#">Address</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+  <body >
+
+
+<!-- header -->
+
+
+
+
+      <header id="header" class="container-fluid hd-bg bg-light smart-scroll">
+        <div class="container">
+          <nav
+            class="navbar navbar-expand-lg navbar-light bg-light pt-xl-4 pb-lg-4 pt pt-4 pb-4"
+          >
+            <div class="container-fluid">
+              <a href="#top">
+                <div class="frameimg">
+                  <img src="./img/imgheader/logoheader_new.svg" />
+                </div>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="true"
+                style="border: none; box-shadow: none"
+              >
+                <i class="fa-solid fa-bars fa-sm" style="color:white"></i>
               </button>
-            </form>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mr-0 mb-2 mb-lg-0 menuheader">
+                  <li class="nav-item">
+                    <br class="d-lg-none"/>
+                    <div class="nav-line d-lg-none"></div>
+                    <br class="d-lg-none"/>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#services" ><div class="detailmenu">서비스 안내</div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#plan"><div class="detailmenu">플랜 안내</div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" href="#faq"><div class="detailmenu">FAQ</div></a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- section one -->
+      <div id="section-one" class="one-bg p-3">
+        <div class="container">
+          <div class="row featurette p-3 ">
+            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
+              <h2 class="featurette-heading fw-normal lh-1">Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.</h2>
+              <p class="lead">We work as a remote programming team for Korean rocket start-ups. Join as a long-term team member rather than outsourcing.</p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#">See Running Projects</a></p> -->
+            </div>
+            <div class="col-md-5">
+              <img src="img/top.png" class="img-fluid" style="border-radius: 15px"/>
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- section one -->
-    <div id="section-one" class="one-bg p-3">
-      <div class="container">
-        <div class="row featurette p-3">
-          <div
-            class="col-md-7 d-flex flex-column justify-content-center align-items-center"
-          >
-            <h2 class="featurette-heading fw-normal lh-1">
-              Metacoders is a Vietnamese S-class developer team that will boost
-              the growth of startups.
-            </h2>
-            <p class="lead">
-              We work as a remote programming team for Korean rocket start-ups.
-              Join as a long-term team member rather than outsourcing.
-            </p>
-            <!--<p><a class="btn btn-lg btn-primary" href="#">See Running Projects</a></p> -->
-          </div>
-          <div class="col-md-5">
-            <img
-              src="img/top.png"
-              class="img-fluid"
-              style="border-radius: 15px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- section two -->
     <div>
@@ -976,24 +929,13 @@
     </div>
 
     <!-- section eight -->
-<div class="one-bg">
-      <div class="container">
-        <div class="owl-carousel owl-theme ">
-          <div class="card-blog">
-            <div class="card-blog-image">
-              <img src="https://picsum.photos/200/300" alt="photo" >
-            </div>
-          </div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-        </div>
-      </div>
-</divcl>
+    <div class="one-bg">
+       <div class="container">
+          <div id="blog-carousel" class="owl-carousel owl-theme">
 
+          </div>
+       </div>
+    </div>
     <!-- section nine -->
     <div style="background:white">
       <div class="container p-3">
@@ -1075,31 +1017,7 @@
     </footer>
     <!-- Footer -->
 
-    <!-- Social Footer -->
-    <!-- <div class="container p-3" >
-      <hr style="border: 2px solid #E8E8E8;"/>
-      <row class="text-center">
-        <div class="col-md-12 text-center">
-      <a class="navbar-brand p-3 text-center" href="#">Metacoders</a></div> -->
-    <!--<div class="col-md-12 text-center footer-lead p-3">Duplicate Search Login</div>-->
-    <!-- <div class="col-md-12 text-center p-2">
-        <a class="navbar-brand p-3 text-center" href="https://www.facebook.com/Metacoders.dev">
-          <img src="img/facebook.png" class="p-2" alt="Facebook" />
-        </a> -->
-    <!--<img src="img/linkedin.png" class="p-2" alt="LinkedIn"/>
-        <img src="img/instagram.png" class="p-2" alt="Instagram"/>
-        <img src="img/twitter.png" class="p-2" alt="Twitter"/>-->
-    <!-- </row>
-    </div> -->
 
-    <!-- Copyright Footer-->
-    <!-- <div class="container p-3" >
-      <hr style="border: 2px solid #E8E8E8;"/>
-      <row class="text-center">
-        <div class="col-md-12 text-center footer-copyright">
-        @Copyright Metacoders. All rights reserved</div>
-    </row>
-    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script
@@ -1123,15 +1041,11 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- carousel -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- js -->
     <script src="./js/services/blogServices.js"></script>
-    <script src="./js/owl-carousel/owl-carousel.js"></script>
+    <script src="./js/header/headerScroll.js"></script>
   </body>
 </html>
