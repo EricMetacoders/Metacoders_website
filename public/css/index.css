@@ -131,7 +131,7 @@ aside {
   font-family: "Helvetica Neue LT Std";
   font-style: normal;
   font-weight: 700;
-  /* font-size: 20px; */
+  font-size: 20px;
   line-height: 24.94px;
 }
 
@@ -565,6 +565,12 @@ aside {
 }
 
 @media (max-width: 1199.98px) {
+  .timeline__event {
+    width: 100% !important;
+  }
+  .timeline__event__content {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 1399.98px) {
