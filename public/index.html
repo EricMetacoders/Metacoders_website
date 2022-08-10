@@ -26,6 +26,15 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'vn', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+}
+  </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/#en/hi/Hello"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,8 +47,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Hello, Metacoders !</title>
   </head>
-  <body >
+  <style>
 
+    
+    .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+        } 
+    body {
+        top: 0px !important; 
+        }
+    
+        /* #google_translate_element {
+          color: transparent;
+        }
+        #google_translate_element a {
+          display: none;
+        } */
+    
+    </style>
+  <body >
+      <!-- SECTION GOOGLE TRANSLATE -->
+
+      <!-- END SECTION GOOGLE TRANSLATE -->
 
 <!-- header -->
       <!-- <nav class="navbar">
@@ -89,6 +118,10 @@
       </nav> -->
 
       <header id="header" class="container-fluid hd-bg bg-light smart-scroll">
+        <div class="">
+            <div id="google_translate_element"  style="position: absolute;left: 90%;z-index: 100;top: 20px;"></div>
+        </div>
+
         <div class="container">
           <nav
             class="navbar navbar-expand-lg navbar-light bg-light pt-xl-4 pb-lg-4 pt pt-4 pb-4"
@@ -119,14 +152,23 @@
                     <br class="d-lg-none"/>
                     <div class="nav-line d-lg-none"></div>
                     <br class="d-lg-none"/>
-                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#services" ><div class="detailmenu">서비스 안내</div></a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#services" ><div class="detailmenu">Home</div></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#plan"><div class="detailmenu">플랜 안내</div></a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#plan"><div class="detailmenu">Contact</div></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" href="#faq"><div class="detailmenu">FAQ</div></a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" >
+                      <div class="detailmenu">  
+                        <div id="google_translate_element"></div> 
+                      </div>
+                    </a>
+                  </li>
+
+        
   
                 </ul>
   
