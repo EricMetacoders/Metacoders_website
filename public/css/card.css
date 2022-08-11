@@ -1,13 +1,8 @@
 .card-blog {
   width: 90%;
   margin: 0 auto;
-<<<<<<< HEAD
-  border-radius: 1em;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-=======
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1em;
->>>>>>> 00f68948b448bf0830e8844551a3c01615c2dd2c
 }
 
 .card-blog-image {
@@ -17,7 +12,6 @@
 
 .card-blog-image img {
   height: 100%;
-<<<<<<< HEAD
   border-radius: 1em 1em 0 0;
 }
 
@@ -114,7 +108,6 @@
 
 .card-content-footer-button a:hover {
   color: green;
-=======
+
   border-radius: 1em;
->>>>>>> 00f68948b448bf0830e8844551a3c01615c2dd2c
 }
