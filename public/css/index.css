@@ -634,11 +634,6 @@ aside {
   margin-left: 10px;
 }
 
-.title-box-content-details p span {
-  font-weight: 600;
-  font-style: italic;
-}
-
 .title-box-content-line-parent {
   height: 100%;
   display: flex;
