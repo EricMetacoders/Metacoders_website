@@ -26,6 +26,19 @@ h1 {
 
 /* HEADER */
 
+/* GG TRANSLATE */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* END GG TRANSLATE */
+
 .nav-line {
   height: 0.5px;
   width: 100%;
