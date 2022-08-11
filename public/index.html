@@ -37,12 +37,12 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'fr', includedLanguages : 'vi,en',layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
       }
 
-    </script>
+    </script> -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript" src="//translate.google.com/#en/hi/Hello"></script>
     <!-- Bootstrap CSS -->
@@ -107,11 +107,23 @@
     <!-- SECTION GOOGLE TRANSLATE -->
     <!-- END SECTION GOOGLE TRANSLATE -->
     <!-- header -->
+
+
     <header id="header" class="container-fluid hd-bg bg-light smart-scroll">
-      <div>
-        <div id="google_translate_element"  style="position: absolute;left: 90%;z-index: 100;top: 40px;"></div>
-      </div>
+  
+        <!-- <div id="google_translate_element"  style="position: absolute;left: 90%;z-index: 100;top: 40px;"></div> -->
+        <div class="btn-group"  style="position: absolute;left: 90%;z-index: 100;top: 40px;" >
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Change language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" >English</a></li>
+            <li><a class="dropdown-item" >Vietnamese</a></li>
+
+          </ul>
+        </div>
       <div class="container">
+      
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light pt-xl-4 pb-lg-4 pt pt-4 pb-4"
         >
@@ -142,12 +154,12 @@
                 <div class="nav-line d-lg-none"></div>
                 <br class="d-lg-none"/>
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#services" >
-                  <div class="detailmenu">Home</div>
+                  <div class="detailmenu" id="hometitle">Home</div>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#plan">
-                  <div class="detailmenu">Contact</div>
+                  <div class="detailmenu" id="contacttitle">Contact</div>
                 </a>
               </li>
               <li class="nav-item">
@@ -174,8 +186,8 @@
           <div class="row featurette">
             <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
               <div class="section-one-content">
-                <h1 class="featurette-heading lh-1 " >Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.</h1>
-                <p >We work as a remote programming team for Korean rocket start-ups. Join as a long-term team member rather than outsourcing.</p>
+                <h1 class="featurette-heading lh-1" id="maintitle">Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.</h1>
+                <p id="maintitledetail">We work as a remote programming team for Korean rocket start-ups. Join as a long-term team member rather than outsourcing.</p>
               </div>
             </div>
             <div class="col-md-5">
@@ -191,7 +203,7 @@
         <div class="container px-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-xl-8">
-              <div class="h1 fs-1 text-white mb-4">
+              <div class="h1 fs-1 text-white mb-4" id="qoute">
                 "Bring you the best quality of experience"
               </div>
               <img src="./img/logo_transparent.svg" alt="logo" style="height: 5rem" />
@@ -213,7 +225,8 @@
 
                 <div class="accordion-item">
                   <h2 id="regularHeadingFirst" class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst"
+                    id="accor1">
                       Metacoders is a Vietnamese S-class developer team that will boost the growth of startups.
                     </button>
                   </h2>
@@ -221,15 +234,15 @@
                     <div class="accordion-body">
                       <ul>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> Manage products long-term as a team member, not just a one-time outsourcing project.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor1-dt1"> Manage products long-term as a team member, not just a one-time outsourcing project.</strong>
                           <p></p>
-                          <p>Development that only implements functions without understanding the product is just normal coders do. Of course, the development of functions must be accomplished.
+                          <p id="accor1-dt2">Development that only implements functions without understanding the product is just normal coders do. Of course, the development of functions must be accomplished.
                           <p>
                         </li>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> If there are various projects, I can work on the projects I want.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor1-dt3"> If there are various projects, I can work on the projects I want.</strong>
                           <p></p>
-                          <p>Metacoders will be a window to connect with rocket startups, regardless of region or language. As Metacoders grows and creates more success, options can vary.
+                          <p id="accor1-dt4">Metacoders will be a window to connect with rocket startups, regardless of region or language. As Metacoders grows and creates more success, options can vary.
                           <p>
                         </li>
                       </ul>
@@ -239,7 +252,8 @@
               
                 <div class="accordion-item"> 
                   <h2 class="accordion-header" id="regularHeadingSecond">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseSecond" aria-expanded="false" aria-controls="regularCollapseSecond">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseSecond" aria-expanded="false" aria-controls="regularCollapseSecond"
+                    id="accor2">
                       You can work with the best team members.
                     </button>
                   </h2>
@@ -247,27 +261,27 @@
                     <div class="accordion-body">
                       <ul>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> There are programmers from Metacoders who never stop trying to grow.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7); "id="accor2-dt1"> There are programmers from Metacoders who never stop trying to grow.</strong>
                           <p></p>
-                          <p>Programmers can grow fast by sharing knowledge and giving feedback on technology. Imagine having hundreds of programmers like that.
+                          <p id="accor2-dt2">Programmers can grow fast by sharing knowledge and giving feedback on technology. Imagine having hundreds of programmers like that.
                           <p>
                         </li>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> Team members of a growing foreign startup</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor2-dt3"> Team members of a growing foreign startup</strong>
                           <p></p>
-                          <p>The product cannot be created by the programmer alone. No one can experience the process of working together with team members full of local experiences, abilities, and persistence, such as planners and designers.
+                          <p id="accor2-dt4">The product cannot be created by the programmer alone. No one can experience the process of working together with team members full of local experiences, abilities, and persistence, such as planners and designers.
                           <p>
                         </li>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> Foreign language-enabled PM supports communication with foreign team members.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor2-dt5"> Foreign language-enabled PM supports communication with foreign team members.</strong>
                           <p></p>
-                          <p>PMs who can speak Vietnamese and Korean will attend meetings with local team members and create tasks to ensure communication is not disrupted. Programmers can focus on troubleshooting.
+                          <p id="accor2-dt6">PMs who can speak Vietnamese and Korean will attend meetings with local team members and create tasks to ensure communication is not disrupted. Programmers can focus on troubleshooting.
                           <p>
                         </li>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> Senior programmers lead the way in development.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor2-dt7"> Senior programmers lead the way in development.</strong>
                           <p></p>
-                          <p>Unpredictable problems always bother us. In such a situation, experience and experience show great value. The team exerts its greatest power when all team members are balanced in all areas.Metacodus's development team has at least one senior developer with at least five years of experience in every team.
+                          <p id="accor2-dt8">Unpredictable problems always bother us. In such a situation, experience and experience show great value. The team exerts its greatest power when all team members are balanced in all areas.Metacodus's development team has at least one senior developer with at least five years of experience in every team.
                           <p>
                         </li>
                       </ul>
@@ -277,7 +291,7 @@
   
                 <div class="accordion-item"> 
                   <h2 class="accordion-header" id="regularHeadingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseThree" aria-expanded="false" aria-controls="regularCollapseThree">
+                    <button class="accordion-button collapsed"      id="accor3" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseThree" aria-expanded="false" aria-controls="regularCollapseThree">
                       Provides a fast growth environment.
                     </button>
                   </h2>
@@ -285,15 +299,15 @@
                     <div class="accordion-body">
                       <ul>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> We will hold hackathon and technical seminars regularly.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor3-dt1" > We will hold hackathon and technical seminars regularly.</strong>
                           <p></p>
-                          <p>Even within the familiar technology stack, changes in development methods and libraries used continue to occur. You can't grow up if you're out of touch with the world while solving the world's problems.
+                          <p id="accor3-dt2">Even within the familiar technology stack, changes in development methods and libraries used continue to occur. You can't grow up if you're out of touch with the world while solving the world's problems.
                           <p>
                         </li>
                         <li>
-                          <strong style="color: rgba(0, 0, 0, 0.7);"> We conduct lectures and practice on new technologies such as blockchain and AI.</strong>
+                          <strong style="color: rgba(0, 0, 0, 0.7);" id="accor3-dt3"> We conduct lectures and practice on new technologies such as blockchain and AI.</strong>
                           <p></p>
-                          <p>Just experiencing new technologies that will grow in the future can greatly affect the career of programmers. There is always a high value-added technology that comes to mind in the flow of technology.
+                          <p id="accor3-dt4">Just experiencing new technologies that will grow in the future can greatly affect the career of programmers. There is always a high value-added technology that comes to mind in the flow of technology.
                           <p>
                         </li>
                       </ul>
@@ -318,8 +332,8 @@
                   <div class="title-box-content-line "></div>
                 </div>
                 <div class="title-box-content-details">
-                  <h2 class="featurette-heading-1  lh-1 m-0">Currently in process</h2>
-                  <p class="lead m-0">Metacoders has done this so far.</p>
+                  <h2 class="featurette-heading-1  lh-1 m-0" id="currentproject">Currently in process</h2>
+                  <p class="lead m-0" id="currentproject-dt">Metacoders has done this so far.</p>
                 </div>
               </div>
             </div>
@@ -333,7 +347,7 @@
                     <circle cx="10" cy="10" r="10" fill="#198754"/>
                     <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
                   </svg>
-                  <span style="margin-left: 20px;">
+                  <span style="margin-left: 20px;" id="currentproject-dt1">
                   Who wants to help spread the capabilities of Vietnamese developers to the world.
                   </span>
                 </p>
@@ -344,7 +358,7 @@
                     <circle cx="10" cy="10" r="10" fill="#198754"/>
                     <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
                   </svg>
-                  <span style="margin-left: 20px;">
+                  <span style="margin-left: 20px;" id="currentproject-dt2">
                   Who wants to grow together by participating in a world-changing project.
                   </span>
                 </p>
@@ -355,7 +369,7 @@
                     <circle cx="10" cy="10" r="10" fill="#198754"/>
                     <path d="M6.15381 9.6154L8.84612 12.3077L13.4615 7.69232" stroke="white" stroke-width="2"/>
                   </svg>
-                  <span style="margin-left: 20px;">
+                  <span style="margin-left: 20px;" id="currentproject-dt3">
                   People who enjoy logical thinking and problem solving
                   </span>
                 </p>
@@ -384,8 +398,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-people-group fa-xl fa-gradient "></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Programming Team</h5>
-                          <p class="card-text"> Joins the programming team of the rocket startup to complete the product.</p>
+                          <h5 class="card-subtitle mb-2 text-muted" id="program">Programming Team</h5>
+                          <p class="card-text" id="program-dt"> Joins the programming team of the rocket startup to complete the product.</p>
                         </div>
                       </div>
                     </div>
@@ -398,8 +412,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-rocket fa-xl fa-gradient"></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Rocket Startups </h5>
-                          <p class="card-text"> Connects with rocket startups that have attracted more than 10 million $.</p>
+                          <h5 class="card-subtitle mb-2 text-muted" id="rocket">Rocket Startups </h5>
+                          <p class="card-text" id="rocket-dt"> Connects with rocket startups that have attracted more than 10 million $.</p>
                         </div>
                       </div>
                     </div>
@@ -414,8 +428,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-earth-asia fa-xl fa-gradient"></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Multi language and cultural</h5>
-                          <p class="card-text"> Addresses language limitations and cultural differences among team members and supports remote collaboration.</p>
+                          <h5 class="card-subtitle mb-2 text-muted" id="mul">Multi language and cultural</h5>
+                          <p class="card-text" id="mul-dt"> Addresses language limitations and cultural differences among team members and supports remote collaboration.</p>
                         </div>
                       </div>
                     </div>
@@ -428,8 +442,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-code fa-xl fa-gradient"></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Job Opportunities </h5>
-                          <p class="card-text"> Seeks to address the imbalance of regional job opportunities in the area of programming.</p>
+                          <h5 class="card-subtitle mb-2 text-muted" id="job">Job Opportunities </h5>
+                          <p class="card-text" id="job-dt"> Seeks to address the imbalance of regional job opportunities in the area of programming.</p>
                         </div>
                       </div>
                     </div>
@@ -444,8 +458,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-handshake fa-xl fa-gradient"></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Collaboration</h5>
-                          <p class="card-text">
+                          <h5 class="card-subtitle mb-2 text-muted" id="col">Collaboration</h5>
+                          <p class="card-text" id="col-dt">
                             Provides the developer's growth environment and the best salary through collaboration with S-class team members..
                           </p>
                         </div>
@@ -460,8 +474,8 @@
                           <h5 class="card-title">
                             <i class="fa-solid fa-building fa-xl fa-gradient"></i>
                           </h5>
-                          <h5 class="card-subtitle mb-2 text-muted">Working Environment </h5>
-                          <p class="card-text"> Modern working environment with comfortable facilities, fully equipped with working tools.</p>
+                          <h5 class="card-subtitle mb-2 text-muted" id="work">Working Environment </h5>
+                          <p class="card-text" id="work-dt"> Modern working environment with comfortable facilities, fully equipped with working tools.</p>
                         </div>
                       </div>
                     </div>
@@ -491,8 +505,8 @@
                     <div class="title-box-content-line "></div>
                   </div>
                   <div class="title-box-content-details">
-                    <h2 class="featurette-heading-1  lh-1 m-0">Currently in process</h2>
-                    <p class="lead m-0">Metacoders has done this so far.</p>
+                    <h2 class="featurette-heading-1  lh-1 m-0" id="current">Currently in process</h2>
+                    <p class="lead m-0" id="current-dt">Metacoders has done this so far.</p>
                   </div>
                 </div>
               </div>
@@ -510,11 +524,11 @@
               </div>
               <div class="timeline__event__content ">
                 <div class="timeline__event__title">
-                  <p>  We have signed a business agreement with VNU and confirmed ITP (Information Technology Park) as a base.</p>
+                  <p id="time1">  We have signed a business agreement with VNU and confirmed ITP (Information Technology Park) as a base.</p>
                 </div>
                 <div class="timeline__event__description">
-                  <p>We Conduct A One-Year Course For VNU CS Undergraduate Graduates.</p>
-                  <p>Within Three Years, A Metacodus Community Of 1,000 Developers Will Be Born.</p>
+                  <p id="time1-dt1">We Conduct A One-Year Course For VNU CS Undergraduate Graduates.</p>
+                  <p id="time1-dt2">Within Three Years, A Metacodus Community Of 1,000 Developers Will Be Born.</p>
                 </div>
               </div>
             </div>
@@ -527,12 +541,12 @@
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">
-                  <p> We decided to provide technical support to Green Labs (agTech) as the first client.</p>
+                  <p id="time2"> We decided to provide technical support to Green Labs (agTech) as the first client.</p>
                 </div>
                 <div class="timeline__event__description">
-                  <p>홈페이지</p>
-                  <p>Green Labs Revolutionizes Human Eating In A Sustainable Way.</p>
-                  <p>Annual Sales Of 100 Billion Won (2021) 500 Billion Won (2022)</p>
+                  <p id="time2-dt1">홈페이지</p>
+                  <p id="time2-dt2">Green Labs Revolutionizes Human Eating In A Sustainable Way.</p>
+                  <p id="time2-dt3">Annual Sales Of 100 Billion Won (2021) 500 Billion Won (2022)</p>
                 </div>
               </div>
             </div>
@@ -545,7 +559,7 @@
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">
-                  <p>We are contacting a fast-growing startup that will become an additional client.</p>
+                  <p id="time3">We are contacting a fast-growing startup that will become an additional client.</p>
                 </div>
                 <div class="timeline__event__description">
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
@@ -561,7 +575,7 @@
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">
-                  <p>Green Labs, SNU, D-Camp, Hanmi Engineering & Construction, #HASHED, etc. signed a partnership</p>
+                  <p  id="time4">Green Labs, SNU, D-Camp, Hanmi Engineering & Construction, #HASHED, etc. signed a partnership</p>
                 </div>
                 <div class="timeline__event__description">
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
@@ -584,8 +598,8 @@
                     <div class="title-box-content-line "></div>
                   </div>
                   <div class="title-box-content-details">
-                    <h2 class="featurette-heading-1  lh-1 m-0">A position under recruitment</h2>
-                    <p class="lead m-0">Become a member of the Metacoders team.</p>
+                    <h2 class="featurette-heading-1  lh-1 m-0" id="postion1">A position under recruitment</h2>
+                    <p class="lead m-0" id="postion1-dt">Become a member of the Metacoders team.</p>
                   </div>
                 </div>
               </div>
@@ -599,13 +613,13 @@
             <div class="container  one-bg" style="box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;border-radius: 10px;">
               <div class="row section-seven-box ">
                 <div class="col-md-8 ">
-                  <h2 class="recruitment-heading">Junior Project Manager(한국어 필수)</h2>
+                  <h2 class="recruitment-heading" id="juni">Junior Project Manager(한국어 필수)</h2>
                   <p class="recruitment-lead">
                     <span class="clock-icon"></span>
                     <span style="margin-left: 10px;padding: 5px 10px;background:  rgba(59, 132, 118, 1);border-radius: 5px;color: white;">Fulltime</span>
                   </p>
                 </div>
-                <div class="col-md-4 text-center inline"><a  style="margin-top: 16px;" class="btn btn-lg btn-apply " href="https://career.metacoders.dev/symfony/web/index.php/recruitmentApply/jobs.html">Apply now</a>
+                <div class="col-md-4 text-center inline"><a  style="margin-top: 16px;" class="btn btn-lg btn-apply " href="https://career.metacoders.dev/symfony/web/index.php/recruitmentApply/jobs.html" id="applynow">Apply now</a>
                 </div>
               </div>
             </div>
@@ -613,14 +627,14 @@
             <div class="container  check-bg" style="box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;border-radius: 10px;">
               <div class="row section-seven-box ">
                 <div class="col-md-8 ">
-                  <h2 class="recruitment-heading">Front-end Developer</h2>
+                  <h2 class="recruitment-heading" id="fe">Front-end Developer</h2>
                   <p class="recruitment-lead">
                     <span class="clock-icon"></span>
                     <span style="margin-left: 10px;padding: 5px 10px;background:  rgba(59, 132, 118, 1);border-radius: 5px;color: white;">Fulltime</span>
                   </p>
                 </div>
                 <div class="col-md-4 text-center inline">
-                  <a  style="margin-top: 16px;" class="btn btn-lg btn-apply" href="https://itviec.com/it-jobs/thu-duc-senior-frontend-dev-reactjs-metacoders-0719">Apply now</a>
+                  <a  style="margin-top: 16px;" class="btn btn-lg btn-apply" href="https://itviec.com/it-jobs/thu-duc-senior-frontend-dev-reactjs-metacoders-0719" id="applynow2">Apply now</a>
                 </div>
               </div>
             </div>
@@ -628,7 +642,7 @@
             <div class="container  check-bg" style="box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;border-radius: 10px;">
               <div class="row section-seven-box ">
                 <div class="col-md-8 ">
-                  <h2 class="recruitment-heading">Back-end Developer</h2>
+                  <h2 class="recruitment-heading" id="be">Back-end Developer</h2>
                   <p class="recruitment-lead">
                     <span class="clock-icon"></span>
                     <span style="margin-left: 10px;padding: 5px 10px;background:  rgba(59, 132, 118, 1);border-radius: 5px;color: white;">Fulltime</span>
@@ -636,7 +650,7 @@
                   <!-- <hr style="border: 2px solid #E8E8E8;"/> -->
                   <!-- <a class="btn btn-lg btn-primary btn-full-description" href="https://itviec.com/it-jobs/thu-duc-senior-backend-nodejs-mysql-metacoders-3401">Full Description</a> -->
                 </div>
-                <div class="col-md-4 text-center inline"><a  style="margin-top: 16px;" class="btn btn-lg btn-apply" href="https://itviec.com/it-jobs/thu-duc-senior-backend-nodejs-mysql-metacoders-3401">Apply now</a></div>
+                <div class="col-md-4 text-center inline"><a  style="margin-top: 16px;" class="btn btn-lg btn-apply" href="https://itviec.com/it-jobs/thu-duc-senior-backend-nodejs-mysql-metacoders-3401" id="applynow3">Apply now</a></div>
               </div>
             </div>
           </div>
@@ -781,6 +795,8 @@
     <!-- js -->
     <script src="./js/services/blogServices.js"></script>
     <script src="./js/header/headerScroll.js"></script>
+    <script src="./js/translate/translate.js"></script>
+
 
   </body>
 </html>
