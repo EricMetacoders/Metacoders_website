@@ -22,7 +22,6 @@ const getBlogList = async () => {
 
 const renderBlogPosts = async () => {
   const getData = await getBlogList();
-  console.log("data:", data);
 
   data.map((item) => {
     document.getElementById("blog-carousel").innerHTML += `
@@ -59,8 +58,8 @@ const renderBlogPosts = async () => {
     margin: 10,
     nav: true,
     navText: [
-      "<i class='fa fa-angle-left fa-2xl'></i>",
-      "<i class='fa fa-angle-right fa-2xl'></i>",
+      "<i class='fa-solid fa-circle-chevron-left fa-2xl'></i>",
+      "<i class='fa-solid fa-circle-chevron-right fa-2xl'></i>",
     ],
     responsive: {
       0: {
@@ -68,10 +67,10 @@ const renderBlogPosts = async () => {
         nav: false,
       },
 
-      1000: {
+      769: {
         items: 2,
       },
-      1400: {
+      1200: {
         items: 3,
       },
     },
