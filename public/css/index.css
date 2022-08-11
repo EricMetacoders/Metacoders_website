@@ -40,6 +40,26 @@ h1 {
 }
 /* HEADER */
 
+/* GG TRANSLATE */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+#google_translate_element select {
+  background: rgba(59, 132, 118, 1);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+}
+
+/* END GG TRANSLATE */
+
 .nav-line {
   height: 0.5px;
   width: 100%;
@@ -717,11 +737,6 @@ aside {
 
 .title-box-content-details {
   margin-left: 10px;
-}
-
-.title-box-content-details p span {
-  font-weight: 600;
-  font-style: italic;
 }
 
 .title-box-content-line-parent {
