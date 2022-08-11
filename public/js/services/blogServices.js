@@ -34,8 +34,8 @@ const renderBlogPosts = async () => {
     </div>
     <div class="card-content">
       <div class="card-content-text">
-        <h2>${item.title.rendered}</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta error eos molestias dolore quod, voluptas, consequuntur unde sit amet...</p>
+        <h3>${item.title.rendered}</h3>
+        <p>${item.yoast_head_json.description}</p>
       </div>
       <div class="card-content-footer">
         <div class="card-content-footer-date">

@@ -3,10 +3,13 @@
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1em;
+  min-height: 560px;
+  position: relative;
+  background: white;
 }
 
 .card-blog-image {
-  height: 300px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -24,7 +27,7 @@
   padding: 2em;
 }
 
-.card-content-text h2 {
+.card-content-text h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -47,6 +50,8 @@
   align-items: center;
   background: rgba(59, 132, 118, 1);
   border-radius: 0em 0em 1em 1em;
+  position: absolute;
+  bottom: 0;
 }
 
 .card-content-footer-date {
