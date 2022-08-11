@@ -1,23 +1,20 @@
 .card-blog {
   width: 90%;
   margin: 0 auto;
-<<<<<<< HEAD
-  border-radius: 1em;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-=======
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1em;
->>>>>>> 00f68948b448bf0830e8844551a3c01615c2dd2c
+  min-height: 560px;
+  position: relative;
+  background: white;
 }
 
 .card-blog-image {
-  height: 300px;
+  height: 240px;
   object-fit: cover;
 }
 
 .card-blog-image img {
   height: 100%;
-<<<<<<< HEAD
   border-radius: 1em 1em 0 0;
 }
 
@@ -30,7 +27,7 @@
   padding: 2em;
 }
 
-.card-content-text h2 {
+.card-content-text h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -53,6 +50,8 @@
   align-items: center;
   background: rgba(59, 132, 118, 1);
   border-radius: 0em 0em 1em 1em;
+  position: absolute;
+  bottom: 0;
 }
 
 .card-content-footer-date {
@@ -114,7 +113,6 @@
 
 .card-content-footer-button a:hover {
   color: green;
-=======
+
   border-radius: 1em;
->>>>>>> 00f68948b448bf0830e8844551a3c01615c2dd2c
 }
