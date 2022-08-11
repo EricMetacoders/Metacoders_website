@@ -323,7 +323,7 @@ aside {
 .check-min {
   min-height: 330px;
 }
-.accordion-item {
+/* .accordion-item {
   border: none;
 }
 .accordion-button:not(.collapsed) {
@@ -334,7 +334,7 @@ aside {
   --bs-accordion-bg: #fbfcff;
   --bs-accordion-btn-focus-border-color: transparent;
   --bs-accordion-btn-focus-box-shadow: transparent;
-}
+} */
 
 /* section one */
 
@@ -346,7 +346,32 @@ aside {
 .section-one-content p {
   padding-bottom: 40px;
 }
-
+/* section three */
+.accordion-button {
+  color: white !important;
+  background: rgba(59, 132, 118, 1) 72% !important;
+}
+.accordion-button:hover {
+  color: white;
+}
+.accordion-button collapsed {
+  color: white;
+  background: rgba(59, 132, 118, 1) 72% !important;
+}
+.accordion-button collapsed:hover {
+  color: white;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.button.accordion-button:not(.collapsed)::after {
+  color: white !important;
+  background: white !important;
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+/* end section three */
 /* section four */
 .section-four-box {
   transform: translatey(0px);
