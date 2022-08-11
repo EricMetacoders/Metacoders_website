@@ -36,6 +36,13 @@ h1 {
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
+#google_translate_element select {
+  background: rgba(59, 132, 118, 1);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+}
 
 /* END GG TRANSLATE */
 
