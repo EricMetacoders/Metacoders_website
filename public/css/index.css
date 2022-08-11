@@ -337,12 +337,14 @@ aside {
 }
 
 /* section one */
-#section-one h1 {
-  padding-bottom: 40px;
+
+.section-one-content {
+  width: 92%;
 }
 
-#section-one p {
-  padding-bottom: 30px;
+.section-one-content h1,
+.section-one-content p {
+  padding-bottom: 40px;
 }
 
 /* section four */
