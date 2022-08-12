@@ -111,17 +111,7 @@
 
     <header id="header" class="container-fluid hd-bg bg-light smart-scroll">
   
-        <!-- <div id="google_translate_element"  style="position: absolute;left: 90%;z-index: 100;top: 40px;"></div> -->
-        <div class="btn-group"  style="position: absolute;left: 90%;z-index: 100;top: 40px;" >
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Change language
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" >English</a></li>
-            <li><a class="dropdown-item" >Vietnamese</a></li>
-
-          </ul>
-        </div>
+        
       <div class="container">
       
       <nav
@@ -167,12 +157,11 @@
                   <div class="detailmenu">FAQ</div>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" >
-                  <div class="detailmenu">
-                    <div id="google_translate_element"></div>
-                  </div>
-                </a>
+              <li class="nav-item d-flex justify-content-end" id="selectframe">
+                <select id="team" class="form-select" aria-label="Default select example" style="width: 110px;">
+                  <option class="engsub" selected value="0">English</option>
+                  <option class="engsub" value="1">Vietnamese</option>
+                </select>
               </li>
             </ul>
           </div>

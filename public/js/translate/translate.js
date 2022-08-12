@@ -1,6 +1,7 @@
-$('.dropdown-item').click(function(){
-    var txt= ($(this).text());
-    if(txt == 'Vietnamese' ){
+
+$('#team').on('click',function(){
+    var value = ($(this).val());
+    if(value == 1 ){
       // var home = ($('.detailmenu')[0].textContent);
     //   HEADER
       $('#hometitle').text('Trang chủ');
@@ -84,8 +85,8 @@ $('.dropdown-item').click(function(){
     $('#postion1-dt').text("Trở thành thành viên của nhóm Metacoders.");
 
     $('#juni').text("Quản lý dự án(한국어 필수)");
-    $('#fe').text("Front-end lập trình viên");
-    $('#be').text("Back-end lập trình viên");
+    $('#fe').text("Lập trình viên Front-end ");
+    $('#be').text("Lập trình viên Back-end ");
     $('#applynow').text("Ứng tuyển ngay");
     $('#applynow2').text("Ứng tuyển ngay");
     $('#applynow3').text("Ứng tuyển ngay");
