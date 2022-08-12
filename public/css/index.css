@@ -670,6 +670,9 @@ aside {
   h1 {
     font-size: 35px;
   }
+  #selectframe {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1199.98px) {
