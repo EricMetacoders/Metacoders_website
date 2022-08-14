@@ -138,18 +138,18 @@
                 <br class="d-lg-none"/>
                 <div class="nav-line d-lg-none"></div>
                 <br class="d-lg-none"/>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#services" >
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#home" >
                   <div class="detailmenu" id="hometitle">Home</div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#plan">
-                  <div class="detailmenu" id="contacttitle">Contact</div>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" href="#inprocess">
+                  <div class="detailmenu" id="contacttitle">In Process</div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" href="#faq">
-                  <div class="detailmenu">FAQ</div>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" href="#recuitment">
+                  <div class="detailmenu">Recuitment</div>
                 </a>
               </li>
               <li class="nav-item d-flex justify-content-end" id="selectframe">
@@ -164,8 +164,8 @@
       </div>
     </header>
     <!-- section one -->
-    <div id="section-one " class=" section-margin-bottom">
-      <div class="container">
+    <div id="section-one" name="home" class=" section-margin-bottom">
+      <div class="container" id="home">
         <div class="section-padding-top">
           <div class="row featurette">
             <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
@@ -479,7 +479,7 @@
     </div>
     <!-- section six -->
     <div id="section-six" class="one-bg section-margin-bottom">
-      <div class="container ">
+      <div class="container " id="inprocess">
         <div class="section-padding-top">
           <div class="row featurette section-content-margin-bottom">
             <div class="col-md-12 pt-5  positions-relative">
@@ -528,7 +528,7 @@
                   <p id="time2"> We decided to provide technical support to Green Labs (agTech) as the first client.</p>
                 </div>
                 <div class="timeline__event__description">
-                  <p id="time2-dt1">홈페이지</p>
+                  <p id="time2-dt1"><a href="https://www.crunchbase.com/organization/greenlabsglobal" target="_blank">Greenlabs</a></p>
                   <p id="time2-dt2">Green Labs Revolutionizes Human Eating In A Sustainable Way.</p>
                   <p id="time2-dt3">Annual Sales Of 100 Billion Won (2021) 500 Billion Won (2022)</p>
                 </div>
@@ -543,10 +543,12 @@
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">
-                  <p id="time3">We are contacting a fast-growing startup that will become an additional client.</p>
+                  <p id="time3">Additional clients</p>
                 </div>
                 <div class="timeline__event__description">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                  <p id="time2-dt1">We are contacting a fast-growing startup that will become an additional partner.</p>
+                  <p id="time2-dt2"></p>
+                  <p id="time2-dt3"></p>
                 </div>
               </div>
             </div>
@@ -559,10 +561,12 @@
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">
-                  <p  id="time4">Green Labs, SNU, D-Camp, Hanmi Engineering & Construction, #HASHED, etc. signed a partnership</p>
+                  <p  id="time4">Additional partnerships</p>
                 </div>
                 <div class="timeline__event__description">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                  <p id="time2-dt1">Green Labs, SNU, D-Camp, Hanmi Engineering & Construction, #HASHED, etc. signed a partnership</p>
+                  <p id="time2-dt2"></p>
+                  <p id="time2-dt3"></p>
                 </div>
               </div>
             </div>
@@ -572,7 +576,7 @@
     </div>
     <!-- section seven -->
   <div class="section-margin-bottom">
-      <div class="container ">
+      <div class="container " id="recuitment">
         <div class="section-padding-top">
           <div class="row featurette section-content-margin-bottom">
             <div class="col d-flex" style="justify-content: center;">
@@ -582,7 +586,7 @@
                     <div class="title-box-content-line "></div>
                   </div>
                   <div class="title-box-content-details">
-                    <h2 class="featurette-heading-1  lh-1 m-0" id="postion1">A position under recruitment</h2>
+                    <h2 class="featurette-heading-1  lh-1 m-0" id="postion1">Positions under recruitment</h2>
                     <p class="lead m-0" id="postion1-dt">Become a member of the Metacoders team.</p>
                   </div>
                 </div>
@@ -693,6 +697,12 @@
             </div>
           </div>
         </div>
+
+            <div class="col-md-4 text-center inline"><a  style="margin-top: 16px;" class="btn btn-lg btn-apply " href="https://discord.gg/FK5r7PGw" id="applynow">Join Discord</a>
+            </div>
+
+        <div class="container">
+          <div class="section-padding-top">
         <widgetbot
           server="992804284137734215"
           channel="992804284137734221"
@@ -700,6 +710,8 @@
           height="600"
           ></widgetbot>
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+          </div>
+        </div>
       </center>
     </div>
     <!-- Footer -->
@@ -710,24 +722,22 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Metacoders</h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Grow together
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Sites Map</h6>
               <p>
-                <a href="#!" class="text-reset">Web</a>
+                <a href="#!"class="text-reset">Main</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a href="https://blog.metacoders.dev/"  target="_blank" class="text-reset">Blog</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Nodejs</a>
+                <a href="https://discord.gg/FK5r7PGw" class="text-reset" target="_blank" >Discord</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Figma</a>
+                <a href="https://business.metacoders.dev/"  target="_blank" class="text-reset">business</a>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -736,10 +746,10 @@
                 Phòng 108, Nhà A, Khu CNPM, đường nội bộ ĐHQG-HCM, Khu phố 6, Phường Linh Trung</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                info@example.com
+                hello@metacoders.dev
               </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p><i class="fas fa-phone me-3"></i> + 84 234 567 88</p>
+              <!-- <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p> -->
             </div>
           </div>
         </div>
@@ -748,10 +758,7 @@
         class="text-center p-4"
         style="background-color: rgba(0, 0, 0, 0.05)"
         >
-        @Copyright Metacoders.
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >All rights reserved</a
-          >
+        @Copyright Metacoders. All rights reserved
       </div>
     </footer>
     <!-- Footer -->
