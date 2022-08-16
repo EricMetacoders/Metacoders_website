@@ -166,7 +166,7 @@ a:active {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+
   line-height: 29px;
   /* identical to box height */
 
@@ -180,10 +180,11 @@ p.from-me {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+
   line-height: 30px;
   text-align: center;
-  /* color: #011612; */
+  color: #011612;
+  padding: 28px 40px 30px 40px;
 }
 
 p.from-me::before {
@@ -225,10 +226,11 @@ p.from-them {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+
   line-height: 30px;
   text-align: center;
   color: #666666;
+  padding: 28px 40px 30px 40px;
 }
 
 p.from-them:before {
@@ -344,7 +346,6 @@ body {
 
 .section-five-content-text {
   font-weight: 600;
-  /* font-size: 24px; */
 }
 .section-five-text-margin-top {
   margin-top: 33px;
@@ -352,7 +353,6 @@ body {
 .green-text {
   color: #3b8476;
   font-weight: 600;
-  /* font-size: 24px; */
 }
 .title-small-text {
   color: #666666;
@@ -787,10 +787,14 @@ p {
     margin-right: auto;
   }
   .from-them {
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
   }
   .from-me {
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
   }
   .framimgbubble {
     width: 60px !important;
@@ -1008,5 +1012,38 @@ p {
   }
   .section-y-space {
     padding-top: 5%;
+  }
+
+  /* SECTION 2 NEW */
+
+  .frametitlechat {
+    width: 89% !important;
+    margin: 0;
+    margin-left: auto;
+  }
+  .frame-me {
+    width: 89% !important;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .framimgbubble {
+    width: 60px !important;
+    margin-top: -30px;
+  }
+  .chat-position {
+    width: 60px;
+    font-size: 18px;
+  }
+  /* END SECTION 2 NEW */
+  .from-them {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
+  }
+  .from-me {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
   }
 }
