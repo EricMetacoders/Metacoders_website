@@ -716,21 +716,6 @@ p {
   color: #666666;
 }
 
-@media (min-width: 360px) and (max-width: 540px) {
-  /* SECTION 2 NEW */
-
-  .frametitlechat {
-    width: 78% !important;
-    margin: 0;
-    margin-left: auto;
-  }
-  .frame-me {
-    width: 78% !important;
-    margin: 0;
-    margin-right: auto;
-  }
-}
-
 @media (max-width: 639.98px) {
   h1 {
     font-size: 24px;
