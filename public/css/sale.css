@@ -715,6 +715,22 @@ p {
   list-style-type: circle;
   color: #666666;
 }
+
+@media (min-width: 360px) and (max-width: 540px) {
+  /* SECTION 2 NEW */
+
+  .frametitlechat {
+    width: 78% !important;
+    margin: 0;
+    margin-left: auto;
+  }
+  .frame-me {
+    width: 78% !important;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 639.98px) {
   h1 {
     font-size: 24px;
@@ -776,16 +792,29 @@ p {
   /* SECTION 2 NEW */
 
   .frametitlechat {
-    width: 70% !important;
+    width: 78% !important;
     margin: 0;
     margin-left: auto;
   }
   .frame-me {
-    width: 70% !important;
+    width: 78% !important;
     margin: 0;
     margin-right: auto;
   }
-
+  .from-them {
+    font-size: 18px !important;
+  }
+  .from-me {
+    font-size: 18px !important;
+  }
+  .framimgbubble {
+    width: 60px !important;
+    margin-top: -30px;
+  }
+  .chat-position {
+    width: 60px;
+    font-size: 18px;
+  }
   /* END SECTION 2 NEW */
 
   /* SECTION 2 */
