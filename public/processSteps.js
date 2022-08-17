@@ -46,7 +46,6 @@ $(".fourth").click(() => {
 $(".five").click(() => {
   $("#nprogress-bar").val("100");
   $("#mobile-nprogress-bar").val("100");
-  $(".five").prevAll().addClass("border-change");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
   $(".third").addClass("border-change");
@@ -106,7 +105,6 @@ $("#fourth").click(() => {
 $("#five").click(() => {
   $("#nprogress-bar").val("100");
   $("#mobile-nprogress-bar").val("100");
-  $(".five").prevAll().addClass("border-change");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
   $(".third").addClass("border-change");

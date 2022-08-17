@@ -492,7 +492,7 @@ a:active {
 #processSteps .process-content #fourth,
 #processSteps .process-content #five {
   display: flex;
-  padding: 24px 0;
+  padding: 24px 26px;
   border-radius: 15px;
   background: var(--one-bg-color);
   margin: 15px 0;
@@ -502,11 +502,11 @@ a:active {
 }
 
 #mobile-nprogress-bar {
-  transform: translate(-175px, 328px) rotate(90deg);
+  transform: translate(-225px, 382px) rotate(90deg);
   -webkit-appearance: none;
   color: #ccc;
   height: 10px;
-  width: 633px;
+  width: 738px;
 }
 
 .process-content-active {
@@ -533,7 +533,6 @@ a:active {
 }
 
 .process-content > div > h2 {
-  margin-left: 2rem;
   text-align: center;
 }
 .process-content > div > p {
@@ -550,6 +549,24 @@ a:active {
 #mobile-step div {
   display: flex;
   justify-content: end;
+  transform: translate(9px, 0);
+  text-align: center;
+}
+
+#mobile-step div:nth-child(1) {
+  transform: translate(9px, 0);
+}
+#mobile-step div:nth-child(2) {
+  transform: translate(9px, 135px);
+}
+#mobile-step div:nth-child(3) {
+  transform: translate(9px, 277px);
+}
+#mobile-step div:nth-child(4) {
+  transform: translate(9px, 440px);
+}
+#mobile-step div:nth-child(5) {
+  transform: translate(9px, 576px);
 }
 
 #mobile-step span {
@@ -631,7 +648,7 @@ a:active {
   background: #ccc;
 }
 #step .border-change,
-#mobile .border-change {
+#mobile-step .border-change {
   border-color: var(--metacoders-sale-title-color);
   background: var(--metacoders-sale-title-color);
   transition: all 0.4s ease-in-out;
@@ -912,5 +929,38 @@ p {
   }
   #step > div:nth-child(5) {
     left: 835px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #mobile-nprogress-bar {
+    transform: translate(-352px, 463px) rotate(90deg);
+    width: 906px;
+  }
+  #mobile-step div:nth-child(3) {
+    transform: translate(9px, 326px);
+  }
+  #mobile-step div:nth-child(4) {
+    transform: translate(9px, 517px);
+  }
+  #mobile-step div:nth-child(5) {
+    transform: translate(9px, 671px);
+  }
+}
+@media screen and (max-width: 639px) {
+  #mobile-nprogress-bar {
+    transform: translate(-208px, 329px) rotate(90deg);
+    width: 611px;
+  }
+  #mobile-step div:nth-child(2) {
+    transform: translate(9px, 97px);
+  }
+  #mobile-step div:nth-child(3) {
+    transform: translate(9px, 220px);
+  }
+  #mobile-step div:nth-child(4) {
+    transform: translate(9px, 340px);
+  }
+  #mobile-step div:nth-child(5) {
+    transform: translate(9px, 439px);
   }
 }
