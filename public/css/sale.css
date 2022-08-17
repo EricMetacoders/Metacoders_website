@@ -245,7 +245,7 @@ p.from-them::after {
   margin-bottom: 1rem !important;
 }
 
-/* END SECTION 2  */
+/* END SECTION 2 NEW  */
 
 /* SECTION FIVE */
 .carousel-control-next-icon {
@@ -964,7 +964,6 @@ p {
     width: 60px;
     font-size: 18px;
   }
-  /* END SECTION 2 NEW */
   .from-them {
     /* font-size: 18px !important; */
     /* padding: 0px 0px 0px 0px !important; */
@@ -975,4 +974,5 @@ p {
     /* padding: 0px 0px 0px 0px !important; */
     padding: 0.5rem 0.875rem !important;
   }
+  /* END SECTION 2 NEW */
 }
