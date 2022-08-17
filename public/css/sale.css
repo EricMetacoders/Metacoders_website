@@ -124,7 +124,6 @@ a:active {
 
 /* SECTION 2 */
 .imessage {
-  background-color: #fff;
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -145,7 +144,6 @@ a:active {
 .imessage p {
   border-radius: 1.15rem;
   line-height: 1.25;
-
   padding: 0.5rem 0.875rem;
   position: relative;
   word-wrap: break-word;
@@ -165,12 +163,9 @@ a:active {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-
   line-height: 29px;
   /* identical to box height */
-
   text-align: center;
-
   color: rgba(1, 22, 18, 0.92);
 }
 p.from-me {
@@ -179,7 +174,6 @@ p.from-me {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-
   line-height: 30px;
   text-align: center;
   color: #011612;
@@ -247,60 +241,10 @@ p.from-them::after {
   width: 10px;
 }
 
-p[class^="from-"].emoji {
-  background: none;
-  font-size: 2.5rem;
-}
-
-p[class^="from-"].emoji::before {
-  content: none;
-}
-
-.no-tail::before {
-  display: none;
-}
-
-.margin-b_none {
-  margin-bottom: 0 !important;
-}
-
 .margin-b_one {
   margin-bottom: 1rem !important;
 }
 
-.margin-t_one {
-  margin-top: 1rem !important;
-}
-
-.comment {
-  color: #222;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  max-width: 100%;
-  padding: 0;
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    margin: 0 0.5rem;
-  }
-
-  .container {
-    padding: 0.5rem;
-  }
-
-  .imessage {
-    font-size: 1.05rem;
-    margin: 0 auto 1rem;
-    max-width: 600px;
-    padding: 0.25rem 0.875rem;
-  }
-
-  .imessage p {
-    margin: 0.5rem 0;
-  }
-}
 /* END SECTION 2  */
 
 /* SECTION FIVE */
