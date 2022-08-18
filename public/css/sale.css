@@ -948,19 +948,19 @@ p {
 }
 @media screen and (max-width: 639px) {
   #mobile-nprogress-bar {
-    transform: translate(-208px, 329px) rotate(90deg);
+    transform: translate(-204px, 329px) rotate(90deg);
     width: 611px;
   }
   #mobile-step div:nth-child(2) {
-    transform: translate(9px, 97px);
+    transform: translate(9px, 132px);
   }
   #mobile-step div:nth-child(3) {
-    transform: translate(9px, 220px);
+    transform: translate(9px, 242px);
   }
   #mobile-step div:nth-child(4) {
-    transform: translate(9px, 340px);
+    transform: translate(9px, 368px);
   }
   #mobile-step div:nth-child(5) {
-    transform: translate(9px, 439px);
+    transform: translate(9px, 491px);
   }
 }
