@@ -45,6 +45,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <!-- aniamte css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- css -->
     <link href="css/sale.css" rel="stylesheet" />
     <link href="css/sale1.css" rel="stylesheet" />
@@ -368,6 +373,7 @@
                       max="100"
                       class="d-lg-block d-none"
                     ></progress>
+
                     <div id="step" class="d-lg-block d-none">
                       <div>
                         <span class="first border-change"></span>
@@ -390,17 +396,21 @@
                         <p>업무 시작</p>
                       </div>
                     </div>
+
                     <div class="container">
                       <div class="row">
-                        <div class="col-3 d-lg-none">
+                        <div class="d-none d-md-block col-3 d-lg-none">
                           <progress
                             id="mobile-nprogress-bar"
                             value="0"
                             max="100"
                             class="d-lg-none d-block"
                           ></progress>
-                          <!-- mobile step -->
-                          <div id="mobile-step" class="d-lg-none d-block">
+                          <!-- tablet step -->
+                          <div
+                            id="tablet-step"
+                            class="d-lg-none d-none d-md-block"
+                          >
                             <div>
                               <p>도입 문의</p>
                               <span class="first border-change"></span>
@@ -423,7 +433,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-12 col-9">
+                        <div class="d-none d-md-block col-lg-12 col-9">
                           <div class="process-content">
                             <div id="first" class="process-content-active">
                               <h2>✅</h2>
@@ -452,6 +462,43 @@
                               </p>
                             </div>
                             <div id="five">
+                              <h2>👏</h2>
+                              <p>
+                                짝짝짝, 축하드려요! 메타코더스와 긴 여정
+                                함께해요.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-md-none">
+                          <div id="mobile-process" class="process-content">
+                            <div id="mobile-first">
+                              <h2>✅</h2>
+                              <p>
+                                도입 문의 버튼을 눌러 회사 정보, 프로젝트 설명,
+                                희망 계약일 등을 셋팅해주세요.
+                              </p>
+                            </div>
+                            <div id="mobile-second">
+                              <h2>👋</h2>
+                              <p>
+                                필요 인원, 기술 스택 등 프로젝트의 상세 내용을
+                                온라인미팅을 통해 진행해요.
+                              </p>
+                            </div>
+                            <div id="mobile-third">
+                              <h2>✍🏻️</h2>
+                              <p>
+                                프로젝트 상세내용이 기술된 계약서에 서명해요.
+                              </p>
+                            </div>
+                            <div id="mobile-fourth">
+                              <h2>🙆‍♀️</h2>
+                              <p>
+                                메타코터스에서 추천드리는 개발자를 승인해요.
+                              </p>
+                            </div>
+                            <div id="mobile-five">
                               <h2>👏</h2>
                               <p>
                                 짝짝짝, 축하드려요! 메타코더스와 긴 여정
@@ -1118,6 +1165,13 @@
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
+    ></script>
+    <!-- jquery plugin -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"
+      integrity="sha512-dy8Q+KMsxJmEgLqvZA7kk/Pcaij/OhCK1LPj+oGuxfd/tcbbqrDSGOtiXNfzKbMun+ZBnQsTWUnhuXhVkISDOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <!-- Tween Max -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>

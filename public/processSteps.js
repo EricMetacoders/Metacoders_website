@@ -114,3 +114,33 @@ $("#five").click(() => {
   $("#five").nextAll().removeClass("process-content-active");
   $("#five").addClass("process-content-active");
 });
+
+// mobile process
+
+$("#mobile-process").bind("inview", function (event, visible) {
+  if (visible == true) {
+    // element is now visible in the viewport
+    console.log("inview");
+    $("#mobile-first").attr("style", "display:flex");
+    $("#mobile-first").addClass("animate__animated animate__fadeInUp");
+    setTimeout(() => {
+      $("#mobile-second").attr("style", "display:flex");
+      $("#mobile-second").addClass("animate__animated animate__fadeInUp");
+    }, 1000);
+    setTimeout(() => {
+      $("#mobile-third").attr("style", "display:flex");
+      $("#mobile-third").addClass("animate__animated animate__fadeInUp");
+    }, 2000);
+    setTimeout(() => {
+      $("#mobile-fourth").attr("style", "display:flex");
+      $("#mobile-fourth").addClass("animate__animated animate__fadeInUp");
+    }, 3000);
+    setTimeout(() => {
+      $("#mobile-five").attr("style", "display:flex");
+      $("#mobile-five").addClass("animate__animated animate__fadeInUp");
+    }, 4000);
+  } else {
+    // element has gone out of viewport
+    console.log("outview");
+  }
+});
