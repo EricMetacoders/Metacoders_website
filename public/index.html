@@ -30,9 +30,12 @@
     <!-- css -->
     <link href="css/sale.css" rel="stylesheet" />
     <link href="css/sale1.css" rel="stylesheet" />
+    <!-- [John]  Do we really need these two css both? -->
     <title>Metacoders - business</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- [John]  Do we really need these all fonts? -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -70,6 +73,7 @@
               aria-expanded="true"
               style="border: none; box-shadow: none"
             >
+            <!-- [John]  Why do not we need "mobile only" comment? -->
               <i
                 class="fa-solid fa-bars"
                 style="font-size: 22px; margin-top: 5px"
@@ -100,6 +104,9 @@
         </nav>
       </div>
     </header>
+    
+    <!-- [John] Why do not we use union expression as "section1" or "section-one" ? -->
+
     <!-- section 1-->
     <div id="section1-root" class="section-y-space">
       <div id="section1-video">
@@ -261,6 +268,11 @@
             </div>
 
             <!-- mobile -->
+            <!--[John] Why do not we try this "break-words"?
+            https://tailwindcss.com/docs/word-break
+            https://tailwindcss.com/docs/whitespace
+            https://tailwindcss.com/docs/break-after
+          -->
             <div class="detailcontent d-md-none">
               <p>
                 해외에 파견할 <span>관리자 선정</span>하고 현지에서 사무실 임대,
@@ -327,6 +339,8 @@
       </div>
 </div>
     <!-- section 4-->
+
+    <!--[John]  https://tailwindcss.com/docs/text-indent   -->
     <div id="section-4" class="container-fluid one-bg section-y-space">
       <div class="container text-center section-content-margin-bottom">
         <h3>외국인과의 협업, 긴장되신다구요? 😬</h3>
