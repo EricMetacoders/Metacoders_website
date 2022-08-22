@@ -120,6 +120,131 @@ a:active {
 
 /* END HEADER */
 
+/* SECTION 2 */
+.imessage {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+  padding: 0.5rem 1.5rem;
+}
+.frametitlechat {
+  width: 80%;
+  margin: auto;
+}
+
+.framimgbubble {
+  width: 81px;
+  margin-top: -30px;
+}
+
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  padding: 0.5rem 0.875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+.chat-position {
+  width: 80px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  color: rgba(1, 22, 18, 0.92);
+}
+p.from-me {
+  align-self: flex-end;
+  background: #f2f3f3;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #011612;
+  padding: 28px 40px 30px 40px;
+}
+
+p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #f2f3f3;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^="from-"] {
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+
+p.from-them {
+  align-items: flex-start;
+  background-color: #f7f7f7;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
+  padding: 28px 40px 30px 40px;
+}
+
+p.from-them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #f7f7f7;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-them::after {
+  background-color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+.margin-b_one {
+  margin-bottom: 1rem !important;
+}
+
+/* END SECTION 2 NEW  */
+
 /* SECTION FIVE */
 .carousel-control-next-icon {
   background-image: url(../assets/image/next_arr.svg);
@@ -382,12 +507,17 @@ a:active {
 /* SECTION 9 */
 .footer {
   height: 96px;
-  padding: 0;
 }
 
 .footer-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
 }
+
 /* END SECTION 9 */
 /* SECTION 3 */
 #section-3 .card1 {
@@ -695,6 +825,7 @@ p {
   list-style-type: circle;
   color: #666666;
 }
+
 @media (max-width: 639.98px) {
   h1 {
     font-size: 24px;
@@ -749,6 +880,40 @@ p {
   }
 
   /* END SECTION 1 */
+
+  /* SECTION 2 NEW */
+
+  .frametitlechat {
+    width: 78% !important;
+    margin: 0;
+    margin-left: auto;
+  }
+  .frame-me {
+    width: 78% !important;
+    margin: 0;
+    margin-right: auto;
+  }
+  .from-them {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
+    text-align: left !important;
+  }
+  .from-me {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
+    text-align: left !important;
+  }
+  .framimgbubble {
+    width: 60px !important;
+    margin-top: -30px;
+  }
+  .chat-position {
+    width: 60px;
+    font-size: 18px;
+  }
+  /* END SECTION 2 NEW */
 
   /* SECTION 2 */
 
@@ -886,6 +1051,26 @@ p {
   }
 }
 
+@media (min-width: 640px) and (max-width: 767.98px) {
+  .frametitlechat {
+    width: 68%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .frametitlechat {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+
 /*  LANDSCAPE */
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
@@ -909,4 +1094,37 @@ p {
   .section-y-space {
     padding-top: 5%;
   }
+
+  /* SECTION 2 NEW */
+
+  .frametitlechat {
+    width: 89% !important;
+    margin: 0;
+    margin-left: auto;
+  }
+  .frame-me {
+    width: 89% !important;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .framimgbubble {
+    width: 60px !important;
+    margin-top: -30px;
+  }
+  .chat-position {
+    width: 60px;
+    font-size: 18px;
+  }
+  .from-them {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
+  }
+  .from-me {
+    /* font-size: 18px !important; */
+    /* padding: 0px 0px 0px 0px !important; */
+    padding: 0.5rem 0.875rem !important;
+  }
+  /* END SECTION 2 NEW */
 }
