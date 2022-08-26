@@ -100,6 +100,12 @@
   transition: all 0.4s ease-in-out;
 }
 
+.m-progress {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 5s;
+}
+
 @media screen and (max-width: 1399px) {
   #step > div:nth-child(1) {
     left: 85px;

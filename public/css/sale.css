@@ -5,8 +5,8 @@
   --metacoders-sale-title-color: #3b8476;
   --section-content-margin-bottom: 6.2rem;
   --mobile-section-content-margin-bottom: 3.1rem;
-  --section-margin-bottom: 10rem;
-  --mobile-section-margin-bottom: 5rem;
+  --section-margin-bottom: 11rem;
+  --mobile-section-margin-bottom: 8rem;
   --section-padding-top: 3.5rem;
   --mobile-section-padding-top: 3.5rem;
   --desktop-title-line-height: 58px;
@@ -19,7 +19,6 @@
 
 .section-y-space {
   margin-bottom: var(--section-margin-bottom);
-  padding-top: var(--section-padding-top);
 }
 
 .section-content-margin-bottom {
@@ -563,6 +562,9 @@ p.from-them::after {
   font-weight: 600;
 }
 
+#section-4 {
+  padding: var(--section-padding-top) 0;
+}
 /* SECTION 8 */
 
 .section-eight .title {
@@ -981,9 +983,6 @@ p {
   .section-content-margin-bottom {
     margin-bottom: 5%;
   }
-  .section-y-space {
-    padding-top: 5%;
-  }
 
   /* SECTION 2 NEW */
 
@@ -1022,9 +1021,11 @@ p {
 @media screen and (max-width: 639.98px) {
   .section-y-space {
     margin-bottom: var(--mobile-section-margin-bottom);
-    padding-top: var(--mobile-section-padding-top);
   }
   .section-content-margin-bottom {
     margin-bottom: var(--mobile-section-content-margin-bottom);
+  }
+  #section-4 {
+    padding: var(--mobile-section-padding-top) 0;
   }
 }
