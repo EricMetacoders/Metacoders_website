@@ -1,5 +1,109 @@
-#mobile-process {
-  min-height: 654px;
+#nprogress-bar {
+  -webkit-appearance: none;
+  width: 862px;
+  color: #ccc;
+  height: 5px;
+  transform: translate(-50%, 19px);
+  left: 50%;
+  position: relative;
+}
+
+.process-content > div > h2 {
+  text-align: center;
+}
+.process-content > div > p {
+  font-weight: 900;
+}
+
+#first,
+#second,
+#third,
+#fourth {
+  margin: 0px;
+}
+
+#tablet-step div {
+  display: flex;
+  justify-content: center;
+  /* transform: translate(9px, 0); */
+  text-align: center;
+}
+
+#step span {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 5px solid #d9d9d9;
+  background: white;
+  position: relative;
+  left: 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#step {
+  height: 100px;
+  width: 100%;
+  transform: translate(0, 2px);
+}
+#step span i {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#step > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#step > div:nth-child(1) {
+  left: 169px;
+}
+#step > div:nth-child(2) {
+  left: 406px;
+}
+#step > div:nth-child(3) {
+  left: 624px;
+}
+#step > div:nth-child(4) {
+  left: 813px;
+}
+#step > div:nth-child(5) {
+  left: 1028px;
+}
+
+#step > div > p {
+  color: black;
+  text-align: center;
+}
+
+.detail {
+  position: relative;
+}
+#nprogress-bar::-webkit-progress-value {
+  /* Changes line color */
+  background: var(--metacoders-sale-title-color);
+  transition: all 0.4s ease-in-out;
+}
+#nprogress-bar::-webkit-progress-bar {
+  /* Changes background color */
+  background: #ccc;
+}
+#step .border-change,
+.m-progress-spans .border-change {
+  border-color: var(--metacoders-sale-title-color);
+  background: var(--metacoders-sale-title-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.m-progress {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 5s;
 }
 
 @media screen and (max-width: 1399px) {
@@ -36,18 +140,85 @@
     left: 835px;
   }
 }
-@media screen and (max-width: 767px) {
-  #mobile-nprogress-bar {
-    transform: translate(-352px, 463px) rotate(90deg);
-    width: 906px;
+
+.m-gr-progress {
+  position: relative;
+}
+
+.m-progress-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-m-progress {
+  width: 5px;
+  height: 80%;
+  background-color: #cccccc;
+}
+
+.m-progress {
+  width: 100%;
+  background-color: #3b8476;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.f-m-progress-spans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 8.7%;
+  right: 41.7%;
+}
+
+.m-progress-spans {
+  height: 85%;
+}
+.m-progress-spans > * + * {
+  margin-top: 105px;
+}
+
+.m-progress-spans > span {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 5px solid #d9d9d9;
+  background: white;
+  position: relative;
+  left: 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 767.98px) {
+  .process-content > div {
+    min-height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #mobile-step div:nth-child(3) {
-    transform: translate(9px, 326px);
+  .m-progress-spans > * + * {
+    margin-top: 150px;
   }
-  #mobile-step div:nth-child(4) {
-    transform: translate(9px, 517px);
+  .f-m-progress-spans {
+    bottom: 8.9%;
   }
-  #mobile-step div:nth-child(5) {
-    transform: translate(9px, 671px);
+}
+@media screen and (max-width: 639.98px) {
+  .process-content > div {
+    min-height: 183px;
+  }
+  .m-progress-spans > * + * {
+    margin-top: 167px;
+  }
+  .f-m-progress-spans {
+    bottom: 9.5%;
   }
 }

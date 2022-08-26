@@ -1,6 +1,6 @@
 $(".first").click(() => {
   $("#nprogress-bar").val("0");
-  $("#mobile-nprogress-bar").val("0");
+  $(".m-progress").css("height", "0%");
   $(".second").removeClass("border-change");
   $(".third").removeClass("border-change");
   $(".fourth").removeClass("border-change");
@@ -9,7 +9,7 @@ $(".first").click(() => {
 });
 $(".second").click(() => {
   $("#nprogress-bar").val("25");
-  $("#mobile-nprogress-bar").val("25");
+  $(".m-progress").css("height", "25%");
   $(".third").removeClass("border-change");
   $(".fourth").removeClass("border-change");
   $(".five").removeClass("border-change");
@@ -21,7 +21,7 @@ $(".second").click(() => {
 });
 $(".third").click(() => {
   $("#nprogress-bar").val("50");
-  $("#mobile-nprogress-bar").val("50");
+  $(".m-progress").css("height", "50%");
   $(".fourth").removeClass("border-change");
   $(".five").removeClass("border-change");
   $(".first").addClass("border-change");
@@ -33,7 +33,7 @@ $(".third").click(() => {
 });
 $(".fourth").click(() => {
   $("#nprogress-bar").val("75");
-  $("#mobile-nprogress-bar").val("75");
+  $(".m-progress").css("height", "75%");
   $(".five").removeClass("border-change");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
@@ -45,7 +45,7 @@ $(".fourth").click(() => {
 });
 $(".five").click(() => {
   $("#nprogress-bar").val("100");
-  $("#mobile-nprogress-bar").val("100");
+  $(".m-progress").css("height", "100%");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
   $(".third").addClass("border-change");
@@ -59,7 +59,7 @@ $(".five").click(() => {
 // div
 $("#first").click(() => {
   $("#nprogress-bar").val("0");
-  $("#mobile-nprogress-bar").val("0");
+  $(".m-progress").css("height", "0%");
   $(".second").removeClass("border-change");
   $(".third").removeClass("border-change");
   $(".fourth").removeClass("border-change");
@@ -68,7 +68,7 @@ $("#first").click(() => {
 });
 $("#second").click(() => {
   $("#nprogress-bar").val("25");
-  $("#mobile-nprogress-bar").val("25");
+  $(".m-progress").css("height", "25%");
   $(".third").removeClass("border-change");
   $(".fourth").removeClass("border-change");
   $(".five").removeClass("border-change");
@@ -80,7 +80,7 @@ $("#second").click(() => {
 });
 $("#third").click(() => {
   $("#nprogress-bar").val("50");
-  $("#mobile-nprogress-bar").val("50");
+  $(".m-progress").css("height", "50%");
   $(".fourth").removeClass("border-change");
   $(".five").removeClass("border-change");
   $(".first").addClass("border-change");
@@ -92,7 +92,7 @@ $("#third").click(() => {
 });
 $("#fourth").click(() => {
   $("#nprogress-bar").val("75");
-  $("#mobile-nprogress-bar").val("75");
+  $(".m-progress").css("height", "75%");
   $(".five").removeClass("border-change");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
@@ -104,7 +104,7 @@ $("#fourth").click(() => {
 });
 $("#five").click(() => {
   $("#nprogress-bar").val("100");
-  $("#mobile-nprogress-bar").val("100");
+  $(".m-progress").css("height", "100%");
   $(".first").addClass("border-change");
   $(".second").addClass("border-change");
   $(".third").addClass("border-change");
@@ -115,32 +115,4 @@ $("#five").click(() => {
   $("#five").addClass("process-content-active");
 });
 
-// mobile process
-
-$("#mobile-process").bind("inview", function (event, visible) {
-  if (visible == true) {
-    // element is now visible in the viewport
-    console.log("inview");
-    $("#mobile-first").attr("style", "display:flex");
-    $("#mobile-first").addClass("animate__animated animate__fadeInUp");
-    setTimeout(() => {
-      $("#mobile-second").attr("style", "display:flex");
-      $("#mobile-second").addClass("animate__animated animate__fadeInUp");
-    }, 1000);
-    setTimeout(() => {
-      $("#mobile-third").attr("style", "display:flex");
-      $("#mobile-third").addClass("animate__animated animate__fadeInUp");
-    }, 2000);
-    setTimeout(() => {
-      $("#mobile-fourth").attr("style", "display:flex");
-      $("#mobile-fourth").addClass("animate__animated animate__fadeInUp");
-    }, 3000);
-    setTimeout(() => {
-      $("#mobile-five").attr("style", "display:flex");
-      $("#mobile-five").addClass("animate__animated animate__fadeInUp");
-    }, 4000);
-  } else {
-    // element has gone out of viewport
-    console.log("outview");
-  }
-});
+// mobile progress
