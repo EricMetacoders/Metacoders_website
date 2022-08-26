@@ -128,9 +128,8 @@ a:active {
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.25rem;
   margin: 0 auto 1rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0 1.5rem;
 }
 .frametitlechat {
   width: 80%;
@@ -619,11 +618,11 @@ p.from-them::after {
   position: relative;
 }
 
-#processSteps .process-content #first,
-#processSteps .process-content #second,
-#processSteps .process-content #third,
-#processSteps .process-content #fourth,
-#processSteps .process-content #five {
+.process-content #first,
+.process-content #second,
+.process-content #third,
+.process-content #fourth,
+.process-content #five {
   display: flex;
   padding: 24px 26px;
   border-radius: 15px;
@@ -635,6 +634,7 @@ p.from-them::after {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+  position: relative;
 }
 
 #processSteps .process-content #mobile-first,
