@@ -689,6 +689,13 @@ p.from-them::after {
   width: 100%;
 }
 
+.center-items-magin-b {
+  align-items: center;
+}
+.center-items-magin-b > h2 {
+  margin-bottom: 0 !important;
+}
+
 .cont {
   height: 100%;
   padding: 0;
