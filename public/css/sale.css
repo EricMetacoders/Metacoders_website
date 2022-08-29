@@ -692,7 +692,9 @@ p.from-them::after {
 
 .center-items-magin-b {
   align-items: center;
-  margin-bottom: 0;
+}
+.center-items-magin-b > h2 {
+  margin-bottom: 0 !important;
 }
 
 .cont {
