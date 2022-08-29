@@ -690,6 +690,11 @@ p.from-them::after {
   width: 100%;
 }
 
+.center-items-magin-b {
+  align-items: center;
+  margin-bottom: 0;
+}
+
 .cont {
   height: 100%;
   padding: 0;
