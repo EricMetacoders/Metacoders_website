@@ -142,7 +142,7 @@ a:active {
 
 .imessage p {
   border-radius: 1.15rem;
-  line-height: 1.25;
+  line-height: 1.5;
   padding: 0.5rem 0.875rem;
   position: relative;
   word-wrap: break-word;
@@ -173,8 +173,8 @@ p.from-me {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
-  text-align: center;
+
+  text-align: left;
   color: #666666;
   padding: 28px 40px 30px 40px;
 }
@@ -219,8 +219,7 @@ p.from-them {
   font-style: normal;
   font-weight: 400;
 
-  line-height: 30px;
-  text-align: center;
+  text-align: left;
   color: #666666;
   padding: 28px 40px 30px 40px;
 }
@@ -967,6 +966,11 @@ p {
   .frametitlechat {
     width: 70%;
     margin: auto;
+  }
+}
+@media (max-width: 1399px) {
+  .changeline {
+    display: none;
   }
 }
 
