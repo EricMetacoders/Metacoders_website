@@ -169,19 +169,19 @@ a:active {
 }
 p.from-me {
   align-self: flex-end;
-  background: #f2f3f3;
+  background: #f7f7f7;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  color: #011612;
+  color: #666666;
   padding: 28px 40px 30px 40px;
 }
 
 p.from-me::before {
   border-bottom-left-radius: 0.8rem 0.7rem;
-  border-right: 1rem solid #f2f3f3;
+  border-right: 1rem solid #f7f7f7;
   right: -0.35rem;
   transform: translate(0, -0.1rem);
 }
