@@ -24,7 +24,7 @@ $("#third").one("inview", function (event, isInView) {
           $("#second").nextAll().removeClass("process-content-active");
           $("#second").addClass("process-content-active");
         }
-        if (pixel === 15) {
+        if (pixel === 20) {
           $("#nprogress-bar").val("50");
           $(".m-progress").css("height", "50%");
           $(".fourth").removeClass("border-change");
@@ -36,7 +36,7 @@ $("#third").one("inview", function (event, isInView) {
           $("#third").nextAll().removeClass("process-content-active");
           $("#third").addClass("process-content-active");
         }
-        if (pixel === 25) {
+        if (pixel === 35) {
           $("#nprogress-bar").val("75");
           $(".m-progress").css("height", "75%");
           $(".five").removeClass("border-change");
@@ -48,7 +48,7 @@ $("#third").one("inview", function (event, isInView) {
           $("#fourth").nextAll().removeClass("process-content-active");
           $("#fourth").addClass("process-content-active");
         }
-        if (pixel === 40) {
+        if (pixel === 45) {
           $("#nprogress-bar").val("100");
           $(".m-progress").css("height", "100%");
           $(".first").addClass("border-change");
