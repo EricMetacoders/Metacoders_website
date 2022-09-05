@@ -111,6 +111,7 @@
                     data-bs-target="#navbarSupportedContent"
                     aria-expanded="false"
                     href="#services"
+                    id="services-header"
                   >
                     <div class="detailmenu">서비스 안내</div>
                   </a>
@@ -122,6 +123,7 @@
                     data-bs-target="#navbarSupportedContent"
                     aria-expanded="false"
                     href="#plan"
+                    id="plan-header"
                   >
                     <div class="detailmenu">플랜 안내</div>
                   </a>
@@ -134,6 +136,7 @@
                     aria-expanded="false"
                     aria-controls="navbarSupportedContent"
                     href="#faq"
+                    id="faq-header"
                   >
                     <div class="detailmenu">FAQ</div>
                   </a>
@@ -511,7 +514,17 @@
                           온라인미팅을 통해 진행해요.
                         </p>
                       </div>
-                      <div id="third" class="center-items-magin-b">
+                      <div
+                        id="third"
+                        class="center-items-magin-b d-none d-lg-flex"
+                      >
+                        <h2>✍🏻️</h2>
+                        <p>프로젝트 상세내용이 기술된 계약서에 서명해요.</p>
+                      </div>
+                      <div
+                        id="third"
+                        class="center-items-magin-b d-block d-lg-none mobile-third"
+                      >
                         <h2>✍🏻️</h2>
                         <p>프로젝트 상세내용이 기술된 계약서에 서명해요.</p>
                       </div>
@@ -532,9 +545,45 @@
             </div>
           </div>
         </div>
+        <!-- desktop button -->
         <div
           id="new-section-5-button"
-          class="buttonsection1"
+          class="buttonsection1 d-none d-lg-block"
+          style="margin-top: 50px"
+        >
+          <button
+            data-tf-popup="OvqWEUCs"
+            data-tf-iframe-props="title=Price Recommender Quiz Template (copy)"
+            data-tf-medium="snippet"
+            style="
+              all: unset;
+              display: inline-block;
+              max-width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              background-color: #3b8476;
+              color: #ffffff;
+              font-size: 18px;
+              border-radius: 22px;
+              padding: 0 30px;
+              font-weight: bold;
+              height: 45px;
+              cursor: pointer;
+              line-height: 45px;
+              text-align: center;
+              margin: 0;
+              text-decoration: none;
+            "
+          >
+            도입 문의
+          </button>
+          <script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+        <!-- mobile button -->
+        <div
+          id="mobile-new-section-5-button"
+          class="buttonsection1 d-block d-lg-none"
           style="margin-top: 50px"
         >
           <button
@@ -1267,6 +1316,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+      integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Tween Max -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
@@ -1277,6 +1332,8 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <!-- indexjs -->
+    <script src="./js/index.js"></script>
     <!-- headerjs -->
     <script src="./js/header.js"></script>
     <!-- process Steps -->
