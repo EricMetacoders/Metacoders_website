@@ -1,3 +1,7 @@
+let count = 0;
+let delay = 100;
+let timeout = null;
+
 var scrollableElement = document.body; //document.getElementById('scrollableElement');
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -54,6 +58,76 @@ function checkScrollDirectionIsUp(event) {
   }
   return event.deltaY < 0;
 }
+function checkScrollDirection(event) {
+  if (checkScrollDirectionIsUp(event)) {
+    // scroll up
+    $(window).bind("wheel", function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        count++;
+      }, delay);
+    });
+  } else {
+    // scroll down
+    $(window).bind("wheel", function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        count++;
+      }, delay);
+    });
+  }
+  if (count === 1) {
+    $("#nprogress-bar").val("25");
+    $(".m-progress").css("height", "25%");
+    $(".third").removeClass("border-change");
+    $(".fourth").removeClass("border-change");
+    $(".five").removeClass("border-change");
+    $(".first").addClass("border-change");
+    $(".second").addClass("border-change");
+    $("#second").prevAll().addClass("process-content-active");
+    $("#second").nextAll().removeClass("process-content-active");
+    $("#second").addClass("process-content-active");
+  }
+  if (count === 2) {
+    $("#nprogress-bar").val("50");
+    $(".m-progress").css("height", "50%");
+    $(".fourth").removeClass("border-change");
+    $(".five").removeClass("border-change");
+    $(".first").addClass("border-change");
+    $(".second").addClass("border-change");
+    $(".third").addClass("border-change");
+    $("#third").prevAll().addClass("process-content-active");
+    $("#third").nextAll().removeClass("process-content-active");
+    $("#third").addClass("process-content-active");
+  }
+  if (count === 3) {
+    $("#nprogress-bar").val("75");
+    $(".m-progress").css("height", "75%");
+    $(".five").removeClass("border-change");
+    $(".first").addClass("border-change");
+    $(".second").addClass("border-change");
+    $(".third").addClass("border-change");
+    $(".fourth").addClass("border-change");
+    $("#fourth").prevAll().addClass("process-content-active");
+    $("#fourth").nextAll().removeClass("process-content-active");
+    $("#fourth").addClass("process-content-active");
+  }
+  if (count === 4) {
+    $("#nprogress-bar").val("100");
+    $(".m-progress").css("height", "100%");
+    $(".first").addClass("border-change");
+    $(".second").addClass("border-change");
+    $(".third").addClass("border-change");
+    $(".fourth").addClass("border-change");
+    $(".five").addClass("border-change");
+    $("#five").prevAll().addClass("process-content-active");
+    $("#five").nextAll().removeClass("process-content-active");
+    $("#five").addClass("process-content-active");
+  }
+  if (count === 5) {
+    enableScroll();
+  }
+}
 
 let pixel = 0;
 
@@ -61,129 +135,9 @@ $("#new-section-5-button").one("inview", function (event, isInView) {
   if (isInView) {
     disableScroll();
     scrollableElement.addEventListener("wheel", checkScrollDirection);
-    function checkScrollDirection(event) {
-      if (checkScrollDirectionIsUp(event)) {
-        // scroll up
-        // pixel -= 9;
-        // console.log("pixel-", pixel);
-        // if (pixel < 0) {
-        //   pixel = 0;
-        // }
-        // if (pixel === 0) {
-        //   $("#nprogress-bar").val("0");
-        //   $(".m-progress").css("height", "0%");
-        //   $(".second").removeClass("border-change");
-        //   $(".third").removeClass("border-change");
-        //   $(".fourth").removeClass("border-change");
-        //   $(".five").removeClass("border-change");
-        //   $("#first").nextAll().removeClass("process-content-active");
-        // }
-        // if (pixel === 9) {
-        //   $("#nprogress-bar").val("25");
-        //   $(".m-progress").css("height", "25%");
-        //   $(".third").removeClass("border-change");
-        //   $(".fourth").removeClass("border-change");
-        //   $(".five").removeClass("border-change");
-        //   $(".first").addClass("border-change");
-        //   $(".second").addClass("border-change");
-        //   $("#second").prevAll().addClass("process-content-active");
-        //   $("#second").nextAll().removeClass("process-content-active");
-        //   $("#second").addClass("process-content-active");
-        // }
-        // if (pixel === 18) {
-        //   $("#nprogress-bar").val("50");
-        //   $(".m-progress").css("height", "50%");
-        //   $(".fourth").removeClass("border-change");
-        //   $(".five").removeClass("border-change");
-        //   $(".first").addClass("border-change");
-        //   $(".second").addClass("border-change");
-        //   $(".third").addClass("border-change");
-        //   $("#third").prevAll().addClass("process-content-active");
-        //   $("#third").nextAll().removeClass("process-content-active");
-        //   $("#third").addClass("process-content-active");
-        // }
-        // if (pixel === 27) {
-        //   $("#nprogress-bar").val("75");
-        //   $(".m-progress").css("height", "75%");
-        //   $(".five").removeClass("border-change");
-        //   $(".first").addClass("border-change");
-        //   $(".second").addClass("border-change");
-        //   $(".third").addClass("border-change");
-        //   $(".fourth").addClass("border-change");
-        //   $("#fourth").prevAll().addClass("process-content-active");
-        //   $("#fourth").nextAll().removeClass("process-content-active");
-        //   $("#fourth").addClass("process-content-active");
-        // }
-        // if (pixel === 36) {
-        //   $("#nprogress-bar").val("100");
-        //   $(".m-progress").css("height", "100%");
-        //   $(".first").addClass("border-change");
-        //   $(".second").addClass("border-change");
-        //   $(".third").addClass("border-change");
-        //   $(".fourth").addClass("border-change");
-        //   $(".five").addClass("border-change");
-        //   $("#five").prevAll().addClass("process-content-active");
-        //   $("#five").nextAll().removeClass("process-content-active");
-        //   $("#five").addClass("process-content-active");
-        // }
-      } else {
-        // scroll down
-        pixel += 9;
-        if (pixel === 9) {
-          $("#nprogress-bar").val("25");
-          $(".m-progress").css("height", "25%");
-          $(".third").removeClass("border-change");
-          $(".fourth").removeClass("border-change");
-          $(".five").removeClass("border-change");
-          $(".first").addClass("border-change");
-          $(".second").addClass("border-change");
-          $("#second").prevAll().addClass("process-content-active");
-          $("#second").nextAll().removeClass("process-content-active");
-          $("#second").addClass("process-content-active");
-        }
-        if (pixel === 18) {
-          $("#nprogress-bar").val("50");
-          $(".m-progress").css("height", "50%");
-          $(".fourth").removeClass("border-change");
-          $(".five").removeClass("border-change");
-          $(".first").addClass("border-change");
-          $(".second").addClass("border-change");
-          $(".third").addClass("border-change");
-          $("#third").prevAll().addClass("process-content-active");
-          $("#third").nextAll().removeClass("process-content-active");
-          $("#third").addClass("process-content-active");
-        }
-        if (pixel === 27) {
-          $("#nprogress-bar").val("75");
-          $(".m-progress").css("height", "75%");
-          $(".five").removeClass("border-change");
-          $(".first").addClass("border-change");
-          $(".second").addClass("border-change");
-          $(".third").addClass("border-change");
-          $(".fourth").addClass("border-change");
-          $("#fourth").prevAll().addClass("process-content-active");
-          $("#fourth").nextAll().removeClass("process-content-active");
-          $("#fourth").addClass("process-content-active");
-        }
-        if (pixel === 36) {
-          $("#nprogress-bar").val("100");
-          $(".m-progress").css("height", "100%");
-          $(".first").addClass("border-change");
-          $(".second").addClass("border-change");
-          $(".third").addClass("border-change");
-          $(".fourth").addClass("border-change");
-          $(".five").addClass("border-change");
-          $("#five").prevAll().addClass("process-content-active");
-          $("#five").nextAll().removeClass("process-content-active");
-          $("#five").addClass("process-content-active");
-        }
-        if (pixel === 45) {
-          enableScroll();
-        }
-      }
-    }
   }
 });
+
 $(".mobile-third").one("inview", function (event, isInView) {
   let lastScrollTop = 0;
   if (isInView) {
