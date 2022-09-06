@@ -202,6 +202,12 @@ $(".mobile-third").one("inview", function (event, isInView) {
     });
   }
 });
+$("#plan").one("inview", function (event, isInView) {
+  if (isInView) {
+    enableScroll();
+    scrollableElement.removeEventListener("wheel", checkScrollDirection);
+  }
+});
 
 $(".first").click(() => {
   $("#nprogress-bar").val("0");
