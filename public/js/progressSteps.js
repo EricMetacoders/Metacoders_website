@@ -59,6 +59,9 @@ function checkScrollDirectionIsUp(event) {
   return event.deltaY < 0;
 }
 function checkScrollDirection(event) {
+  if (count === 0) {
+    count++;
+  }
   if (checkScrollDirectionIsUp(event)) {
     // scroll up
     $(window).bind("wheel", function () {
@@ -73,6 +76,7 @@ function checkScrollDirection(event) {
       clearTimeout(timeout);
       timeout = setTimeout(function () {
         count++;
+        console.log("count++", count);
       }, delay);
     });
   }
@@ -158,7 +162,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#second").nextAll().removeClass("process-content-active");
           $("#second").addClass("process-content-active");
         }
-        if (pixel === 20) {
+        if (pixel === 40) {
           $("#nprogress-bar").val("50");
           $(".m-progress").css("height", "50%");
           $(".fourth").removeClass("border-change");
@@ -170,7 +174,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#third").nextAll().removeClass("process-content-active");
           $("#third").addClass("process-content-active");
         }
-        if (pixel === 35) {
+        if (pixel === 80) {
           $("#nprogress-bar").val("75");
           $(".m-progress").css("height", "75%");
           $(".five").removeClass("border-change");
@@ -182,7 +186,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#fourth").nextAll().removeClass("process-content-active");
           $("#fourth").addClass("process-content-active");
         }
-        if (pixel === 45) {
+        if (pixel === 120) {
           $("#nprogress-bar").val("100");
           $(".m-progress").css("height", "100%");
           $(".first").addClass("border-change");
