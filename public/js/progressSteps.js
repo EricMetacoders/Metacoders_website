@@ -76,7 +76,6 @@ function checkScrollDirection(event) {
       clearTimeout(timeout);
       timeout = setTimeout(function () {
         count++;
-        console.log("count++", count);
       }, delay);
     });
   }
