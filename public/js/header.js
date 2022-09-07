@@ -47,16 +47,7 @@ function autoHide() {
   }
   timer = setTimeout(function () {
     $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
-  }, 500);
-}
-
-function tagAutoHide() {
-  if (timer !== null) {
-    clearTimeout(timer);
-  }
-  timer = setTimeout(function () {
-    $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
-  }, 10);
+  }, 1000);
 }
 
 if (navigator.userAgent.indexOf("Mac OS X") != -1) {
@@ -104,8 +95,9 @@ const scrollToFAQ = () => {
       {
         scrollTop: $($(this).attr("href")).offset().top,
       },
-      500
+      50
     );
+
     return false;
   });
 };
@@ -122,8 +114,9 @@ const scrollToPlan = () => {
       {
         scrollTop: $($(this).attr("href")).offset().top,
       },
-      500
+      50
     );
+
     return false;
   });
 };
