@@ -1,3 +1,6 @@
+const scrollTop = $(window).scrollTop();
+const elementOffset = $("#new-section-5").offset().top;
+
 let count = 0;
 let delay = 100;
 let timeout = null;
@@ -132,14 +135,38 @@ function checkScrollDirection(event) {
   }
 }
 
-let pixel = 0;
+// $("#new-section-5-button").one("inview", function (event, isInView) {
+//   if (isInView) {
+//     disableScroll();
+//     scrollableElement.addEventListener("wheel", checkScrollDirection);
+//   }
+// });
 
-$("#new-section-5-button").one("inview", function (event, isInView) {
-  if (isInView) {
-    disableScroll();
-    scrollableElement.addEventListener("wheel", checkScrollDirection);
-  }
+$(document).ready(function () {
+  var doc = document.documentElement;
+  const offsetEl = $("#new-section-5").offset();
+  console.log("offsetEl:", offsetEl);
+  const elem = document.getElementById("new-section-5");
+  let elemPos = 100;
+
+  $(window).scroll(function () {
+    const rect = elem.getBoundingClientRect().top;
+    elemPos = rect;
+
+    if (elemPos <= 30) {
+      window.onscroll = () => {
+        window.scroll({
+          top: offsetEl.top,
+        });
+      };
+      disableScroll();
+
+      scrollableElement.addEventListener("wheel", checkScrollDirection);
+    }
+  });
 });
+
+let pixel = 0;
 
 $(".mobile-third").one("inview", function (event, isInView) {
   let lastScrollTop = 0;
