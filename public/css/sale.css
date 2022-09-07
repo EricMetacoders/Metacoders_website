@@ -405,7 +405,7 @@ p.from-them::after {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 20%;
+  padding-top: 17%;
 }
 .section1 > h1 {
   font-style: normal;
@@ -1029,6 +1029,17 @@ p {
   /* END SECTION 2 NEW */
 }
 
+@media screen and (max-width: 1999.98px) {
+  .section1 {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .section1 {
+    padding-top: 25%;
+  }
+}
+
 @media screen and (max-width: 639.98px) {
   .section-y-space {
     margin-bottom: var(--mobile-section-margin-bottom);
@@ -1038,5 +1049,8 @@ p {
   }
   #section-4 {
     padding: var(--mobile-section-padding-top) 0;
+  }
+  .section1 {
+    padding-top: 35%;
   }
 }

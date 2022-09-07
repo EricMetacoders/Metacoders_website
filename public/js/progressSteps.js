@@ -145,7 +145,6 @@ function checkScrollDirection(event) {
 $(document).ready(function () {
   var doc = document.documentElement;
   const offsetEl = $("#new-section-5").offset();
-  console.log("offsetEl:", offsetEl);
   const elem = document.getElementById("new-section-5");
   let elemPos = 100;
 
