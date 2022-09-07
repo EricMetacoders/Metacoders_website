@@ -65,8 +65,34 @@ if (navigator.userAgent.indexOf("Mac OS X") != -1) {
   $("body").addClass("css-window");
 }
 
+// const handleFaqDesktopAnimation = () => {
+//   enableScroll();
+//   $("#plan").show();
+//   $("#section-seven").show();
+//   $("#faq").show();
+//   $("#footer").show();
+//   $("#dect-box").off();
+//   $("#section1-root").hide();
+//   $("#detect-section-2").hide();
+//   $("#detect-new-section-2").hide();
+//   $("#services").hide();
+//   $("#section-4").hide();
+//   $("#new-section-five-title-green").one("inview", function (event, isInView) {
+//     if (isInView) {
+//       tagAutoHide();
+//     }
+//   });
+//   setTimeout(() => {
+//     $("#detect-frist-content").one("inview", function (event, isInView) {
+//       if (isInView) {
+//         disableScroll();
+//         scrollableElement.addEventListener("wheel", faqCheckScrollDirection);
+//       }
+//     });
+//   }, 1000);
+// };
+
 const scrollToFAQ = () => {
-  enableScroll();
   $("#plan").show();
   $("#section-seven").show();
   $("#faq").show();
@@ -82,22 +108,22 @@ const scrollToFAQ = () => {
     );
     return false;
   });
-  $("#section1-root").hide();
-  $("#detect-section-2").hide();
-  $("#detect-new-section-2").hide();
-  $("#services").hide();
-  $("#section-4").hide();
-  $("#new-section-five-title-green").one("inview", function (event, isInView) {
-    if (isInView) {
-      tagAutoHide();
-    }
+};
+
+const scrollToPlan = () => {
+  $("#plan").show();
+  $("#section-seven").show();
+  $("#faq").show();
+  $("#footer").show();
+  $("#dect-box").off();
+  $(window).scrollTop($("#plan").offset().top);
+  $("#plan-header").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500
+    );
+    return false;
   });
-  setTimeout(() => {
-    $("#detect-frist-content").one("inview", function (event, isInView) {
-      if (isInView) {
-        disableScroll();
-        scrollableElement.addEventListener("wheel", faqCheckScrollDirection);
-      }
-    });
-  }, 1000);
 };

@@ -130,10 +130,12 @@ function checkScrollDirection(event) {
   }
   if (count === 5) {
     enableScroll();
+    $("#faq-header").off();
     $("#plan").show();
     $("#section-seven").show();
     $("#faq").show();
     $("#footer").show();
+    $("#faq-header").off();
   }
 }
 function faqCheckScrollDirection(event) {
@@ -206,21 +208,16 @@ function faqCheckScrollDirection(event) {
     $("#five").nextAll().removeClass("process-content-active");
     $("#five").addClass("process-content-active");
     $("#detect-new-section-2").show();
+    $("#section-4").show();
+    $("#services").show();
+    $("#detect-section-2").show();
+    $("#section1-root").show();
   }
   if (count === 5) {
-    enableScroll();
+    $("#faq-header").off();
   }
   if (count === 6) {
-    $("#section-4").show();
-  }
-  if (count === 7) {
-    $("#services").show();
-  }
-  if (count === 8) {
-    $("#detect-section-2").show();
-  }
-  if (count === 9) {
-    $("#section1-root").show();
+    enableScroll();
   }
 }
 
