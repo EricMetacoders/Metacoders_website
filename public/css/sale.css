@@ -1033,18 +1033,12 @@ p {
   /* END SECTION 2 NEW */
 }
 
-@media screen and (max-width: 1999.98px) {
-  .section1 {
-    padding-top: 25%;
-  }
-}
-
 @media screen and (max-width: 991.98px) {
   .hide {
     display: block;
   }
   .section1 {
-    padding-top: 33%;
+    padding-top: 28%;
   }
 }
 
@@ -1059,6 +1053,6 @@ p {
     padding: var(--mobile-section-padding-top) 0;
   }
   .section1 {
-    padding-top: 48%;
+    padding-top: 37%;
   }
 }
