@@ -60,6 +60,10 @@ a:active {
   --bs-accordion-btn-focus-border-color: transparent;
   --bs-accordion-btn-focus-box-shadow: transparent;
 }
+
+.hide {
+  display: none;
+}
 /* HEADER */
 
 .nav-line {
@@ -1038,5 +1042,11 @@ p {
   }
   #section-4 {
     padding: var(--mobile-section-padding-top) 0;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .hide {
+    display: block;
   }
 }

@@ -47,7 +47,7 @@ function autoHide() {
   }
   timer = setTimeout(function () {
     $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
-  }, 1000);
+  }, 500);
 }
 
 if (navigator.userAgent.indexOf("Mac OS X") != -1) {
@@ -55,3 +55,37 @@ if (navigator.userAgent.indexOf("Mac OS X") != -1) {
 } else {
   $("body").addClass("css-window");
 }
+
+const scrollToFAQ = () => {
+  enableScroll();
+  $("#plan").show();
+  $("#section-seven").show();
+  $("#faq").show();
+  $("#footer").show();
+  $("#dect-box").off();
+  $(window).scrollTop($("#faq").offset().top);
+  $("#faq-header").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500
+    );
+    return false;
+  });
+  $("#section1-root").hide();
+  $("#detect-section-2").hide();
+  $("#detect-new-section-2").hide();
+  $("#services").hide();
+  $("#section-4").hide();
+
+  setTimeout(() => {
+    $("#detect-frist-content").one("inview", function (event, isInView) {
+      if (isInView) {
+        autoHide();
+        disableScroll();
+        scrollableElement.addEventListener("wheel", faqCheckScrollDirection);
+      }
+    });
+  }, 2000);
+};
