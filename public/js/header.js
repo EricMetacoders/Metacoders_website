@@ -50,6 +50,15 @@ function autoHide() {
   }, 500);
 }
 
+function tagAutoHide() {
+  if (timer !== null) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(function () {
+    $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
+  }, 10);
+}
+
 if (navigator.userAgent.indexOf("Mac OS X") != -1) {
   $("body").addClass("css-mac");
 } else {
@@ -78,14 +87,17 @@ const scrollToFAQ = () => {
   $("#detect-new-section-2").hide();
   $("#services").hide();
   $("#section-4").hide();
-
+  $("#new-section-five-title-green").one("inview", function (event, isInView) {
+    if (isInView) {
+      tagAutoHide();
+    }
+  });
   setTimeout(() => {
     $("#detect-frist-content").one("inview", function (event, isInView) {
       if (isInView) {
-        autoHide();
         disableScroll();
         scrollableElement.addEventListener("wheel", faqCheckScrollDirection);
       }
     });
-  }, 2000);
+  }, 1000);
 };

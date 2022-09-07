@@ -204,13 +204,21 @@ function faqCheckScrollDirection(event) {
     $("#five").prevAll().addClass("process-content-active");
     $("#five").nextAll().removeClass("process-content-active");
     $("#five").addClass("process-content-active");
+    $("#detect-new-section-2").show();
   }
   if (count === 5) {
     enableScroll();
-    $("#detect-new-section-2").show();
+  }
+  if (count === 6) {
     $("#section-4").show();
+  }
+  if (count === 7) {
     $("#services").show();
+  }
+  if (count === 8) {
     $("#detect-section-2").show();
+  }
+  if (count === 9) {
     $("#section1-root").show();
   }
 }
@@ -242,7 +250,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#second").nextAll().removeClass("process-content-active");
           $("#second").addClass("process-content-active");
         }
-        if (pixel === 40) {
+        if (pixel === 30) {
           $("#nprogress-bar").val("50");
           $(".m-progress").css("height", "50%");
           $(".fourth").removeClass("border-change");
@@ -254,7 +262,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#third").nextAll().removeClass("process-content-active");
           $("#third").addClass("process-content-active");
         }
-        if (pixel === 80) {
+        if (pixel === 60) {
           $("#nprogress-bar").val("75");
           $(".m-progress").css("height", "75%");
           $(".five").removeClass("border-change");
@@ -266,7 +274,7 @@ $(".mobile-third").one("inview", function (event, isInView) {
           $("#fourth").nextAll().removeClass("process-content-active");
           $("#fourth").addClass("process-content-active");
         }
-        if (pixel === 120) {
+        if (pixel === 90) {
           $("#nprogress-bar").val("100");
           $(".m-progress").css("height", "100%");
           $(".first").addClass("border-change");
