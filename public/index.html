@@ -116,7 +116,22 @@
                     <div class="detailmenu">서비스 안내</div>
                   </a>
                 </li>
-                <li class="nav-item">
+                    <!-- desktop -->
+                    <li class="nav-item d-none d-lg-block">
+                      <a
+                        class="nav-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-expanded="false"
+                        href="#plan"
+                        id="plan-header"
+                        onclick="scrollToPlan()"
+                      >
+                        <div class="detailmenu">플랜 안내</div>
+                      </a>
+                    </li>
+                <!-- mobile -->
+                <li class="nav-item d-block d-lg-none">
                   <a
                     class="nav-link"
                     data-bs-toggle="collapse"
@@ -136,8 +151,9 @@
                     data-bs-target="#navbarSupportedContent"
                     aria-expanded="false"
                     aria-controls="navbarSupportedContent"
-                    id="faq-header"
                     href="#faq"
+                    id="faq-header"
+
                   >
                     <div class="detailmenu"">FAQ</div>
                   </a>
@@ -150,9 +166,8 @@
                     data-bs-target="#navbarSupportedContent"
                     aria-expanded="false"
                     aria-controls="navbarSupportedContent"
-                    id="faq-header"
-                    onclick="scrollToFAQ()"
                     href="#faq"
+                    onclick="scrollToFAQ()"
                   >
                     <div class="detailmenu">FAQ</div>
                   </a>
